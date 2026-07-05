@@ -1,0 +1,12 @@
+{
+  "name": "504-words",
+  "version": "1.0.0",
+  "description": "Learn and memorize the 504 Absolutely Essential Words with Persian meanings",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

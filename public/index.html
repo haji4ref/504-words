@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>504 Words</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>504 Essential Words</h1>
+      <nav class="tabs">
+        <button class="tab-btn active" data-mode="all">All Words</button>
+        <button class="tab-btn" data-mode="saved">Saved Words (<span id="saved-count">0</span>)</button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="progress-row">
+        <span id="position-label">-</span>
+        <span id="lesson-label"></span>
+      </div>
+
+      <section class="card" id="word-card">
+        <div class="word" id="word-text">Loading...</div>
+        <button class="meaning-toggle" id="meaning-toggle">Show meaning</button>
+        <div class="meaning fa" id="meaning-text" hidden></div>
+      </section>
+
+      <div class="controls">
+        <button id="prev-btn" class="ctrl-btn">&#8592; Prev</button>
+        <button id="save-btn" class="ctrl-btn save-btn">&#9733; Save</button>
+        <button id="next-btn" class="ctrl-btn">Next &#8594;</button>
+      </div>
+
+      <p class="empty-msg" id="empty-msg" hidden>No saved words yet. Switch to "All Words" and save some!</p>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

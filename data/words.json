@@ -1,0 +1,3026 @@
+[
+  {
+    "id": 1,
+    "lesson": 1,
+    "word": "abandon",
+    "meaning": "رها کردن، ترک کردن"
+  },
+  {
+    "id": 2,
+    "lesson": 1,
+    "word": "keen",
+    "meaning": "مشتاق، تیزهوش"
+  },
+  {
+    "id": 3,
+    "lesson": 1,
+    "word": "jealous",
+    "meaning": "حسود"
+  },
+  {
+    "id": 4,
+    "lesson": 1,
+    "word": "tact",
+    "meaning": "درایت، تدبیر"
+  },
+  {
+    "id": 5,
+    "lesson": 1,
+    "word": "oath",
+    "meaning": "سوگند"
+  },
+  {
+    "id": 6,
+    "lesson": 1,
+    "word": "vacant",
+    "meaning": "خالی"
+  },
+  {
+    "id": 7,
+    "lesson": 1,
+    "word": "hardship",
+    "meaning": "سختی، مشقت"
+  },
+  {
+    "id": 8,
+    "lesson": 1,
+    "word": "gallant",
+    "meaning": "شجاع، جوانمرد"
+  },
+  {
+    "id": 9,
+    "lesson": 1,
+    "word": "data",
+    "meaning": "اطلاعات، داده‌ها"
+  },
+  {
+    "id": 10,
+    "lesson": 1,
+    "word": "unaccustomed",
+    "meaning": "غیرعادی، ناآشنا"
+  },
+  {
+    "id": 11,
+    "lesson": 1,
+    "word": "bachelor",
+    "meaning": "مجرد"
+  },
+  {
+    "id": 12,
+    "lesson": 1,
+    "word": "qualify",
+    "meaning": "واجد شرایط بودن"
+  },
+  {
+    "id": 13,
+    "lesson": 2,
+    "word": "corpse",
+    "meaning": "جسد"
+  },
+  {
+    "id": 14,
+    "lesson": 2,
+    "word": "conceal",
+    "meaning": "پنهان کردن"
+  },
+  {
+    "id": 15,
+    "lesson": 2,
+    "word": "dismal",
+    "meaning": "غم‌انگیز، تاریک"
+  },
+  {
+    "id": 16,
+    "lesson": 2,
+    "word": "frigid",
+    "meaning": "بسیار سرد"
+  },
+  {
+    "id": 17,
+    "lesson": 2,
+    "word": "inhabit",
+    "meaning": "ساکن بودن، سکونت داشتن"
+  },
+  {
+    "id": 18,
+    "lesson": 2,
+    "word": "numb",
+    "meaning": "بی‌حس"
+  },
+  {
+    "id": 19,
+    "lesson": 2,
+    "word": "peril",
+    "meaning": "خطر"
+  },
+  {
+    "id": 20,
+    "lesson": 2,
+    "word": "recline",
+    "meaning": "دراز کشیدن، لم دادن"
+  },
+  {
+    "id": 21,
+    "lesson": 2,
+    "word": "shriek",
+    "meaning": "جیغ زدن"
+  },
+  {
+    "id": 22,
+    "lesson": 2,
+    "word": "sinister",
+    "meaning": "شوم، بدطینت"
+  },
+  {
+    "id": 23,
+    "lesson": 2,
+    "word": "tempt",
+    "meaning": "وسوسه کردن"
+  },
+  {
+    "id": 24,
+    "lesson": 2,
+    "word": "wager",
+    "meaning": "شرط‌بندی"
+  },
+  {
+    "id": 25,
+    "lesson": 3,
+    "word": "typical",
+    "meaning": "معمولی، نوعی"
+  },
+  {
+    "id": 26,
+    "lesson": 3,
+    "word": "minimum",
+    "meaning": "حداقل"
+  },
+  {
+    "id": 27,
+    "lesson": 3,
+    "word": "scarce",
+    "meaning": "کمیاب"
+  },
+  {
+    "id": 28,
+    "lesson": 3,
+    "word": "annual",
+    "meaning": "سالانه"
+  },
+  {
+    "id": 29,
+    "lesson": 3,
+    "word": "persuade",
+    "meaning": "متقاعد کردن"
+  },
+  {
+    "id": 30,
+    "lesson": 3,
+    "word": "essential",
+    "meaning": "ضروری"
+  },
+  {
+    "id": 31,
+    "lesson": 3,
+    "word": "blend",
+    "meaning": "مخلوط کردن"
+  },
+  {
+    "id": 32,
+    "lesson": 3,
+    "word": "visible",
+    "meaning": "قابل مشاهده"
+  },
+  {
+    "id": 33,
+    "lesson": 3,
+    "word": "expensive",
+    "meaning": "گران"
+  },
+  {
+    "id": 34,
+    "lesson": 3,
+    "word": "talent",
+    "meaning": "استعداد"
+  },
+  {
+    "id": 35,
+    "lesson": 3,
+    "word": "devise",
+    "meaning": "ابداع کردن، طراحی کردن"
+  },
+  {
+    "id": 36,
+    "lesson": 3,
+    "word": "wholesale",
+    "meaning": "عمده‌فروشی"
+  },
+  {
+    "id": 37,
+    "lesson": 4,
+    "word": "vapor",
+    "meaning": "بخار"
+  },
+  {
+    "id": 38,
+    "lesson": 4,
+    "word": "eliminate",
+    "meaning": "حذف کردن"
+  },
+  {
+    "id": 39,
+    "lesson": 4,
+    "word": "villain",
+    "meaning": "آدم شرور"
+  },
+  {
+    "id": 40,
+    "lesson": 4,
+    "word": "dense",
+    "meaning": "متراکم، غلیظ"
+  },
+  {
+    "id": 41,
+    "lesson": 4,
+    "word": "utilize",
+    "meaning": "استفاده کردن"
+  },
+  {
+    "id": 42,
+    "lesson": 4,
+    "word": "humid",
+    "meaning": "مرطوب"
+  },
+  {
+    "id": 43,
+    "lesson": 4,
+    "word": "theory",
+    "meaning": "نظریه"
+  },
+  {
+    "id": 44,
+    "lesson": 4,
+    "word": "descend",
+    "meaning": "پایین آمدن، نزول کردن"
+  },
+  {
+    "id": 45,
+    "lesson": 4,
+    "word": "circulate",
+    "meaning": "چرخیدن، در گردش بودن"
+  },
+  {
+    "id": 46,
+    "lesson": 4,
+    "word": "enormous",
+    "meaning": "بسیار بزرگ، عظیم"
+  },
+  {
+    "id": 47,
+    "lesson": 4,
+    "word": "predict",
+    "meaning": "پیش‌بینی کردن"
+  },
+  {
+    "id": 48,
+    "lesson": 4,
+    "word": "vanish",
+    "meaning": "ناپدید شدن"
+  },
+  {
+    "id": 49,
+    "lesson": 5,
+    "word": "tradition",
+    "meaning": "سنت"
+  },
+  {
+    "id": 50,
+    "lesson": 5,
+    "word": "rural",
+    "meaning": "روستایی"
+  },
+  {
+    "id": 51,
+    "lesson": 5,
+    "word": "burden",
+    "meaning": "بار، مسئولیت سنگین"
+  },
+  {
+    "id": 52,
+    "lesson": 5,
+    "word": "campus",
+    "meaning": "محوطه دانشگاه"
+  },
+  {
+    "id": 53,
+    "lesson": 5,
+    "word": "majority",
+    "meaning": "اکثریت"
+  },
+  {
+    "id": 54,
+    "lesson": 5,
+    "word": "assemble",
+    "meaning": "جمع کردن، گردهم آوردن"
+  },
+  {
+    "id": 55,
+    "lesson": 5,
+    "word": "explore",
+    "meaning": "کاوش کردن"
+  },
+  {
+    "id": 56,
+    "lesson": 5,
+    "word": "topic",
+    "meaning": "موضوع"
+  },
+  {
+    "id": 57,
+    "lesson": 5,
+    "word": "debate",
+    "meaning": "مناظره"
+  },
+  {
+    "id": 58,
+    "lesson": 5,
+    "word": "evade",
+    "meaning": "طفره رفتن، فرار کردن از"
+  },
+  {
+    "id": 59,
+    "lesson": 5,
+    "word": "probe",
+    "meaning": "بررسی کردن، کاوش کردن"
+  },
+  {
+    "id": 60,
+    "lesson": 5,
+    "word": "reform",
+    "meaning": "اصلاح کردن"
+  },
+  {
+    "id": 61,
+    "lesson": 6,
+    "word": "approach",
+    "meaning": "نزدیک شدن"
+  },
+  {
+    "id": 62,
+    "lesson": 6,
+    "word": "detect",
+    "meaning": "کشف کردن، تشخیص دادن"
+  },
+  {
+    "id": 63,
+    "lesson": 6,
+    "word": "defect",
+    "meaning": "نقص، عیب"
+  },
+  {
+    "id": 64,
+    "lesson": 6,
+    "word": "employee",
+    "meaning": "کارمند"
+  },
+  {
+    "id": 65,
+    "lesson": 6,
+    "word": "neglect",
+    "meaning": "غفلت کردن، بی‌توجهی کردن"
+  },
+  {
+    "id": 66,
+    "lesson": 6,
+    "word": "deceive",
+    "meaning": "فریب دادن"
+  },
+  {
+    "id": 67,
+    "lesson": 6,
+    "word": "undoubtedly",
+    "meaning": "بدون شک"
+  },
+  {
+    "id": 68,
+    "lesson": 6,
+    "word": "popular",
+    "meaning": "محبوب"
+  },
+  {
+    "id": 69,
+    "lesson": 6,
+    "word": "thorough",
+    "meaning": "کامل، دقیق"
+  },
+  {
+    "id": 70,
+    "lesson": 6,
+    "word": "client",
+    "meaning": "مشتری، موکل"
+  },
+  {
+    "id": 71,
+    "lesson": 6,
+    "word": "comprehensive",
+    "meaning": "جامع"
+  },
+  {
+    "id": 72,
+    "lesson": 6,
+    "word": "defraud",
+    "meaning": "کلاهبرداری کردن"
+  },
+  {
+    "id": 73,
+    "lesson": 7,
+    "word": "postpone",
+    "meaning": "به تعویق انداختن"
+  },
+  {
+    "id": 74,
+    "lesson": 7,
+    "word": "consent",
+    "meaning": "رضایت، موافقت"
+  },
+  {
+    "id": 75,
+    "lesson": 7,
+    "word": "massive",
+    "meaning": "عظیم، سنگین"
+  },
+  {
+    "id": 76,
+    "lesson": 7,
+    "word": "capsule",
+    "meaning": "کپسول"
+  },
+  {
+    "id": 77,
+    "lesson": 7,
+    "word": "preserve",
+    "meaning": "حفظ کردن"
+  },
+  {
+    "id": 78,
+    "lesson": 7,
+    "word": "denounce",
+    "meaning": "محکوم کردن (علنی)"
+  },
+  {
+    "id": 79,
+    "lesson": 7,
+    "word": "unique",
+    "meaning": "منحصربه‌فرد"
+  },
+  {
+    "id": 80,
+    "lesson": 7,
+    "word": "torrent",
+    "meaning": "سیل، جریان شدید"
+  },
+  {
+    "id": 81,
+    "lesson": 7,
+    "word": "resent",
+    "meaning": "رنجیدن، دلخور شدن از"
+  },
+  {
+    "id": 82,
+    "lesson": 7,
+    "word": "molest",
+    "meaning": "مزاحمت ایجاد کردن"
+  },
+  {
+    "id": 83,
+    "lesson": 7,
+    "word": "gloomy",
+    "meaning": "دلگیر، تاریک"
+  },
+  {
+    "id": 84,
+    "lesson": 7,
+    "word": "unforeseen",
+    "meaning": "پیش‌بینی‌نشده"
+  },
+  {
+    "id": 85,
+    "lesson": 8,
+    "word": "exaggerate",
+    "meaning": "اغراق کردن"
+  },
+  {
+    "id": 86,
+    "lesson": 8,
+    "word": "amateur",
+    "meaning": "آماتور، غیرحرفه‌ای"
+  },
+  {
+    "id": 87,
+    "lesson": 8,
+    "word": "mediocre",
+    "meaning": "متوسط، معمولی"
+  },
+  {
+    "id": 88,
+    "lesson": 8,
+    "word": "variety",
+    "meaning": "تنوع"
+  },
+  {
+    "id": 89,
+    "lesson": 8,
+    "word": "valid",
+    "meaning": "معتبر"
+  },
+  {
+    "id": 90,
+    "lesson": 8,
+    "word": "survive",
+    "meaning": "زنده ماندن"
+  },
+  {
+    "id": 91,
+    "lesson": 8,
+    "word": "weird",
+    "meaning": "عجیب، غیرعادی"
+  },
+  {
+    "id": 92,
+    "lesson": 8,
+    "word": "prominent",
+    "meaning": "برجسته، مشهور"
+  },
+  {
+    "id": 93,
+    "lesson": 8,
+    "word": "security",
+    "meaning": "امنیت"
+  },
+  {
+    "id": 94,
+    "lesson": 8,
+    "word": "bulky",
+    "meaning": "حجیم"
+  },
+  {
+    "id": 95,
+    "lesson": 8,
+    "word": "reluctant",
+    "meaning": "بی‌میل، اکراه‌دار"
+  },
+  {
+    "id": 96,
+    "lesson": 8,
+    "word": "obvious",
+    "meaning": "واضح، آشکار"
+  },
+  {
+    "id": 97,
+    "lesson": 9,
+    "word": "vicinity",
+    "meaning": "نزدیکی، مجاورت"
+  },
+  {
+    "id": 98,
+    "lesson": 9,
+    "word": "century",
+    "meaning": "قرن"
+  },
+  {
+    "id": 99,
+    "lesson": 9,
+    "word": "rage",
+    "meaning": "خشم شدید"
+  },
+  {
+    "id": 100,
+    "lesson": 9,
+    "word": "document",
+    "meaning": "سند، مدرک"
+  },
+  {
+    "id": 101,
+    "lesson": 9,
+    "word": "conclude",
+    "meaning": "نتیجه‌گیری کردن، پایان دادن"
+  },
+  {
+    "id": 102,
+    "lesson": 9,
+    "word": "undeniable",
+    "meaning": "انکارناپذیر"
+  },
+  {
+    "id": 103,
+    "lesson": 9,
+    "word": "resist",
+    "meaning": "مقاومت کردن"
+  },
+  {
+    "id": 104,
+    "lesson": 9,
+    "word": "lack",
+    "meaning": "کمبود، فاقد بودن"
+  },
+  {
+    "id": 105,
+    "lesson": 9,
+    "word": "ignore",
+    "meaning": "نادیده گرفتن"
+  },
+  {
+    "id": 106,
+    "lesson": 9,
+    "word": "challenge",
+    "meaning": "چالش، به مبارزه طلبیدن"
+  },
+  {
+    "id": 107,
+    "lesson": 9,
+    "word": "miniature",
+    "meaning": "مینیاتوری، کوچک‌شده"
+  },
+  {
+    "id": 108,
+    "lesson": 9,
+    "word": "source",
+    "meaning": "منبع"
+  },
+  {
+    "id": 109,
+    "lesson": 10,
+    "word": "excel",
+    "meaning": "برتری داشتن، سرآمد بودن"
+  },
+  {
+    "id": 110,
+    "lesson": 10,
+    "word": "feminine",
+    "meaning": "زنانه"
+  },
+  {
+    "id": 111,
+    "lesson": 10,
+    "word": "mount",
+    "meaning": "سوار شدن، بالا رفتن"
+  },
+  {
+    "id": 112,
+    "lesson": 10,
+    "word": "compete",
+    "meaning": "رقابت کردن"
+  },
+  {
+    "id": 113,
+    "lesson": 10,
+    "word": "dread",
+    "meaning": "وحشت داشتن از"
+  },
+  {
+    "id": 114,
+    "lesson": 10,
+    "word": "masculine",
+    "meaning": "مردانه"
+  },
+  {
+    "id": 115,
+    "lesson": 10,
+    "word": "menace",
+    "meaning": "تهدید"
+  },
+  {
+    "id": 116,
+    "lesson": 10,
+    "word": "tendency",
+    "meaning": "گرایش"
+  },
+  {
+    "id": 117,
+    "lesson": 10,
+    "word": "underestimate",
+    "meaning": "دست کم گرفتن"
+  },
+  {
+    "id": 118,
+    "lesson": 10,
+    "word": "victorious",
+    "meaning": "پیروز"
+  },
+  {
+    "id": 119,
+    "lesson": 10,
+    "word": "numerous",
+    "meaning": "متعدد، بسیار"
+  },
+  {
+    "id": 120,
+    "lesson": 10,
+    "word": "flexible",
+    "meaning": "انعطاف‌پذیر"
+  },
+  {
+    "id": 121,
+    "lesson": 11,
+    "word": "evidence",
+    "meaning": "شواهد، مدرک"
+  },
+  {
+    "id": 122,
+    "lesson": 11,
+    "word": "solitary",
+    "meaning": "تنها، منزوی"
+  },
+  {
+    "id": 123,
+    "lesson": 11,
+    "word": "vision",
+    "meaning": "بینایی، دیدگاه"
+  },
+  {
+    "id": 124,
+    "lesson": 11,
+    "word": "frequent",
+    "meaning": "مکرر"
+  },
+  {
+    "id": 125,
+    "lesson": 11,
+    "word": "glimpse",
+    "meaning": "نگاه گذرا، اجمالی"
+  },
+  {
+    "id": 126,
+    "lesson": 11,
+    "word": "recent",
+    "meaning": "اخیر"
+  },
+  {
+    "id": 127,
+    "lesson": 11,
+    "word": "decade",
+    "meaning": "دهه"
+  },
+  {
+    "id": 128,
+    "lesson": 11,
+    "word": "hesitate",
+    "meaning": "تردید کردن"
+  },
+  {
+    "id": 129,
+    "lesson": 11,
+    "word": "absurd",
+    "meaning": "مسخره، پوچ"
+  },
+  {
+    "id": 130,
+    "lesson": 11,
+    "word": "conflict",
+    "meaning": "تعارض، درگیری"
+  },
+  {
+    "id": 131,
+    "lesson": 11,
+    "word": "minority",
+    "meaning": "اقلیت"
+  },
+  {
+    "id": 132,
+    "lesson": 11,
+    "word": "fiction",
+    "meaning": "داستان تخیلی"
+  },
+  {
+    "id": 133,
+    "lesson": 12,
+    "word": "ignite",
+    "meaning": "آتش زدن، مشتعل کردن"
+  },
+  {
+    "id": 134,
+    "lesson": 12,
+    "word": "abolish",
+    "meaning": "لغو کردن"
+  },
+  {
+    "id": 135,
+    "lesson": 12,
+    "word": "urban",
+    "meaning": "شهری"
+  },
+  {
+    "id": 136,
+    "lesson": 12,
+    "word": "population",
+    "meaning": "جمعیت"
+  },
+  {
+    "id": 137,
+    "lesson": 12,
+    "word": "frank",
+    "meaning": "صریح، رک"
+  },
+  {
+    "id": 138,
+    "lesson": 12,
+    "word": "pollute",
+    "meaning": "آلوده کردن"
+  },
+  {
+    "id": 139,
+    "lesson": 12,
+    "word": "reveal",
+    "meaning": "آشکار کردن"
+  },
+  {
+    "id": 140,
+    "lesson": 12,
+    "word": "prohibit",
+    "meaning": "ممنوع کردن"
+  },
+  {
+    "id": 141,
+    "lesson": 12,
+    "word": "urgent",
+    "meaning": "فوری، ضروری"
+  },
+  {
+    "id": 142,
+    "lesson": 12,
+    "word": "adequate",
+    "meaning": "کافی"
+  },
+  {
+    "id": 143,
+    "lesson": 12,
+    "word": "decrease",
+    "meaning": "کاهش دادن"
+  },
+  {
+    "id": 144,
+    "lesson": 12,
+    "word": "audible",
+    "meaning": "قابل شنیدن"
+  },
+  {
+    "id": 145,
+    "lesson": 13,
+    "word": "journalist",
+    "meaning": "روزنامه‌نگار"
+  },
+  {
+    "id": 146,
+    "lesson": 13,
+    "word": "famine",
+    "meaning": "قحطی"
+  },
+  {
+    "id": 147,
+    "lesson": 13,
+    "word": "revive",
+    "meaning": "احیا کردن، زنده کردن"
+  },
+  {
+    "id": 148,
+    "lesson": 13,
+    "word": "commence",
+    "meaning": "آغاز کردن"
+  },
+  {
+    "id": 149,
+    "lesson": 13,
+    "word": "observant",
+    "meaning": "تیزبین، بادقت"
+  },
+  {
+    "id": 150,
+    "lesson": 13,
+    "word": "identify",
+    "meaning": "شناسایی کردن"
+  },
+  {
+    "id": 151,
+    "lesson": 13,
+    "word": "migrate",
+    "meaning": "مهاجرت کردن"
+  },
+  {
+    "id": 152,
+    "lesson": 13,
+    "word": "vessel",
+    "meaning": "کشتی، ظرف"
+  },
+  {
+    "id": 153,
+    "lesson": 13,
+    "word": "persist",
+    "meaning": "پافشاری کردن، ادامه دادن"
+  },
+  {
+    "id": 154,
+    "lesson": 13,
+    "word": "hazy",
+    "meaning": "مه‌آلود، مبهم"
+  },
+  {
+    "id": 155,
+    "lesson": 13,
+    "word": "gleam",
+    "meaning": "پرتو نور، درخشش"
+  },
+  {
+    "id": 156,
+    "lesson": 13,
+    "word": "editor",
+    "meaning": "ویراستار"
+  },
+  {
+    "id": 157,
+    "lesson": 14,
+    "word": "unruly",
+    "meaning": "سرکش، غیرقابل کنترل"
+  },
+  {
+    "id": 158,
+    "lesson": 14,
+    "word": "rival",
+    "meaning": "رقیب"
+  },
+  {
+    "id": 159,
+    "lesson": 14,
+    "word": "violent",
+    "meaning": "خشن، شدید"
+  },
+  {
+    "id": 160,
+    "lesson": 14,
+    "word": "brutal",
+    "meaning": "وحشیانه، بی‌رحم"
+  },
+  {
+    "id": 161,
+    "lesson": 14,
+    "word": "opponent",
+    "meaning": "حریف، مخالف"
+  },
+  {
+    "id": 162,
+    "lesson": 14,
+    "word": "brawl",
+    "meaning": "دعوا، مشاجره پرسروصدا"
+  },
+  {
+    "id": 163,
+    "lesson": 14,
+    "word": "duplicate",
+    "meaning": "کپی، تکراری"
+  },
+  {
+    "id": 164,
+    "lesson": 14,
+    "word": "vicious",
+    "meaning": "شرور، بدجنس"
+  },
+  {
+    "id": 165,
+    "lesson": 14,
+    "word": "whirling",
+    "meaning": "چرخان"
+  },
+  {
+    "id": 166,
+    "lesson": 14,
+    "word": "underdog",
+    "meaning": "بازنده احتمالی، ضعیف‌تر"
+  },
+  {
+    "id": 167,
+    "lesson": 14,
+    "word": "thrust",
+    "meaning": "هل دادن با نیرو"
+  },
+  {
+    "id": 168,
+    "lesson": 14,
+    "word": "bewildered",
+    "meaning": "گیج، سردرگم"
+  },
+  {
+    "id": 169,
+    "lesson": 15,
+    "word": "expand",
+    "meaning": "گسترش دادن"
+  },
+  {
+    "id": 170,
+    "lesson": 15,
+    "word": "alter",
+    "meaning": "تغییر دادن"
+  },
+  {
+    "id": 171,
+    "lesson": 15,
+    "word": "mature",
+    "meaning": "بالغ، رسیده"
+  },
+  {
+    "id": 172,
+    "lesson": 15,
+    "word": "sacred",
+    "meaning": "مقدس"
+  },
+  {
+    "id": 173,
+    "lesson": 15,
+    "word": "revise",
+    "meaning": "بازبینی کردن، اصلاح کردن"
+  },
+  {
+    "id": 174,
+    "lesson": 15,
+    "word": "pledge",
+    "meaning": "قول، تعهد"
+  },
+  {
+    "id": 175,
+    "lesson": 15,
+    "word": "casual",
+    "meaning": "غیررسمی، اتفاقی"
+  },
+  {
+    "id": 176,
+    "lesson": 15,
+    "word": "pursue",
+    "meaning": "دنبال کردن"
+  },
+  {
+    "id": 177,
+    "lesson": 15,
+    "word": "unanimous",
+    "meaning": "همرأی، اتفاق‌نظر"
+  },
+  {
+    "id": 178,
+    "lesson": 15,
+    "word": "fortunate",
+    "meaning": "خوش‌شانس"
+  },
+  {
+    "id": 179,
+    "lesson": 15,
+    "word": "pioneer",
+    "meaning": "پیشگام، پیشرو"
+  },
+  {
+    "id": 180,
+    "lesson": 15,
+    "word": "innovative",
+    "meaning": "نوآورانه"
+  },
+  {
+    "id": 181,
+    "lesson": 16,
+    "word": "slender",
+    "meaning": "باریک، لاغر"
+  },
+  {
+    "id": 182,
+    "lesson": 16,
+    "word": "surpass",
+    "meaning": "پیشی گرفتن از، برتری داشتن"
+  },
+  {
+    "id": 183,
+    "lesson": 16,
+    "word": "vast",
+    "meaning": "وسیع، عظیم"
+  },
+  {
+    "id": 184,
+    "lesson": 16,
+    "word": "doubt",
+    "meaning": "شک، تردید"
+  },
+  {
+    "id": 185,
+    "lesson": 16,
+    "word": "capacity",
+    "meaning": "ظرفیت"
+  },
+  {
+    "id": 186,
+    "lesson": 16,
+    "word": "penetrate",
+    "meaning": "نفوذ کردن"
+  },
+  {
+    "id": 187,
+    "lesson": 16,
+    "word": "pierce",
+    "meaning": "سوراخ کردن، نفوذ کردن"
+  },
+  {
+    "id": 188,
+    "lesson": 16,
+    "word": "accurate",
+    "meaning": "دقیق"
+  },
+  {
+    "id": 189,
+    "lesson": 16,
+    "word": "microscope",
+    "meaning": "میکروسکوپ"
+  },
+  {
+    "id": 190,
+    "lesson": 16,
+    "word": "grateful",
+    "meaning": "سپاسگزار، ممنون"
+  },
+  {
+    "id": 191,
+    "lesson": 16,
+    "word": "cautious",
+    "meaning": "محتاط"
+  },
+  {
+    "id": 192,
+    "lesson": 16,
+    "word": "confident",
+    "meaning": "مطمئن، با اعتمادبه‌نفس"
+  },
+  {
+    "id": 193,
+    "lesson": 17,
+    "word": "appeal",
+    "meaning": "جذابیت، درخواست تجدیدنظر"
+  },
+  {
+    "id": 194,
+    "lesson": 17,
+    "word": "addict",
+    "meaning": "معتاد"
+  },
+  {
+    "id": 195,
+    "lesson": 17,
+    "word": "wary",
+    "meaning": "محتاط، هوشیار"
+  },
+  {
+    "id": 196,
+    "lesson": 17,
+    "word": "aware",
+    "meaning": "آگاه"
+  },
+  {
+    "id": 197,
+    "lesson": 17,
+    "word": "misfortune",
+    "meaning": "بدشانسی"
+  },
+  {
+    "id": 198,
+    "lesson": 17,
+    "word": "avoid",
+    "meaning": "اجتناب کردن"
+  },
+  {
+    "id": 199,
+    "lesson": 17,
+    "word": "wretched",
+    "meaning": "بدبخت، رقت‌انگیز"
+  },
+  {
+    "id": 200,
+    "lesson": 17,
+    "word": "keg",
+    "meaning": "بشکه کوچک"
+  },
+  {
+    "id": 201,
+    "lesson": 17,
+    "word": "nourish",
+    "meaning": "تغذیه کردن، پرورش دادن"
+  },
+  {
+    "id": 202,
+    "lesson": 17,
+    "word": "harsh",
+    "meaning": "خشن، تند"
+  },
+  {
+    "id": 203,
+    "lesson": 17,
+    "word": "quantity",
+    "meaning": "مقدار، کمیت"
+  },
+  {
+    "id": 204,
+    "lesson": 17,
+    "word": "opt",
+    "meaning": "انتخاب کردن"
+  },
+  {
+    "id": 205,
+    "lesson": 18,
+    "word": "tragedy",
+    "meaning": "تراژدی، فاجعه"
+  },
+  {
+    "id": 206,
+    "lesson": 18,
+    "word": "pedestrian",
+    "meaning": "عابر پیاده"
+  },
+  {
+    "id": 207,
+    "lesson": 18,
+    "word": "glance",
+    "meaning": "نگاه سریع"
+  },
+  {
+    "id": 208,
+    "lesson": 18,
+    "word": "budget",
+    "meaning": "بودجه"
+  },
+  {
+    "id": 209,
+    "lesson": 18,
+    "word": "nimble",
+    "meaning": "چابک، فرز"
+  },
+  {
+    "id": 210,
+    "lesson": 18,
+    "word": "manipulate",
+    "meaning": "دستکاری کردن، ماهرانه به کار بردن"
+  },
+  {
+    "id": 211,
+    "lesson": 18,
+    "word": "reckless",
+    "meaning": "بی‌احتیاط، بی‌پروا"
+  },
+  {
+    "id": 212,
+    "lesson": 18,
+    "word": "horrid",
+    "meaning": "وحشتناک"
+  },
+  {
+    "id": 213,
+    "lesson": 18,
+    "word": "rave",
+    "meaning": "هذیان گفتن، با شور صحبت کردن"
+  },
+  {
+    "id": 214,
+    "lesson": 18,
+    "word": "economical",
+    "meaning": "مقرون‌به‌صرفه، صرفه‌جو"
+  },
+  {
+    "id": 215,
+    "lesson": 18,
+    "word": "lubricate",
+    "meaning": "روغن‌کاری کردن"
+  },
+  {
+    "id": 216,
+    "lesson": 18,
+    "word": "ingenious",
+    "meaning": "مبتکرانه، زیرک"
+  },
+  {
+    "id": 217,
+    "lesson": 19,
+    "word": "harvest",
+    "meaning": "برداشت محصول"
+  },
+  {
+    "id": 218,
+    "lesson": 19,
+    "word": "abundant",
+    "meaning": "فراوان"
+  },
+  {
+    "id": 219,
+    "lesson": 19,
+    "word": "uneasy",
+    "meaning": "نگران، ناآرام"
+  },
+  {
+    "id": 220,
+    "lesson": 19,
+    "word": "calculate",
+    "meaning": "محاسبه کردن"
+  },
+  {
+    "id": 221,
+    "lesson": 19,
+    "word": "absorb",
+    "meaning": "جذب کردن"
+  },
+  {
+    "id": 222,
+    "lesson": 19,
+    "word": "estimate",
+    "meaning": "تخمین زدن"
+  },
+  {
+    "id": 223,
+    "lesson": 19,
+    "word": "morsel",
+    "meaning": "لقمه، مقدار کم"
+  },
+  {
+    "id": 224,
+    "lesson": 19,
+    "word": "quota",
+    "meaning": "سهمیه"
+  },
+  {
+    "id": 225,
+    "lesson": 19,
+    "word": "threat",
+    "meaning": "تهدید"
+  },
+  {
+    "id": 226,
+    "lesson": 19,
+    "word": "ban",
+    "meaning": "ممنوع کردن"
+  },
+  {
+    "id": 227,
+    "lesson": 19,
+    "word": "panic",
+    "meaning": "وحشت‌زدگی"
+  },
+  {
+    "id": 228,
+    "lesson": 19,
+    "word": "appropriate",
+    "meaning": "مناسب"
+  },
+  {
+    "id": 229,
+    "lesson": 20,
+    "word": "emerge",
+    "meaning": "پدیدار شدن، بیرون آمدن"
+  },
+  {
+    "id": 230,
+    "lesson": 20,
+    "word": "jagged",
+    "meaning": "دندانه‌دار، ناهموار"
+  },
+  {
+    "id": 231,
+    "lesson": 20,
+    "word": "linger",
+    "meaning": "ماندن، طول کشیدن"
+  },
+  {
+    "id": 232,
+    "lesson": 20,
+    "word": "ambush",
+    "meaning": "کمین"
+  },
+  {
+    "id": 233,
+    "lesson": 20,
+    "word": "crafty",
+    "meaning": "حیله‌گر، زیرک"
+  },
+  {
+    "id": 234,
+    "lesson": 20,
+    "word": "defiant",
+    "meaning": "سرکش، مقاوم"
+  },
+  {
+    "id": 235,
+    "lesson": 20,
+    "word": "vigor",
+    "meaning": "نیرو، انرژی"
+  },
+  {
+    "id": 236,
+    "lesson": 20,
+    "word": "perish",
+    "meaning": "نابود شدن، مردن"
+  },
+  {
+    "id": 237,
+    "lesson": 20,
+    "word": "fragile",
+    "meaning": "شکننده"
+  },
+  {
+    "id": 238,
+    "lesson": 20,
+    "word": "captive",
+    "meaning": "اسیر، زندانی"
+  },
+  {
+    "id": 239,
+    "lesson": 20,
+    "word": "prosper",
+    "meaning": "موفق شدن، رونق یافتن"
+  },
+  {
+    "id": 240,
+    "lesson": 20,
+    "word": "devour",
+    "meaning": "حریصانه خوردن، بلعیدن"
+  },
+  {
+    "id": 241,
+    "lesson": 21,
+    "word": "plea",
+    "meaning": "درخواست، التماس"
+  },
+  {
+    "id": 242,
+    "lesson": 21,
+    "word": "weary",
+    "meaning": "خسته"
+  },
+  {
+    "id": 243,
+    "lesson": 21,
+    "word": "collide",
+    "meaning": "برخورد کردن"
+  },
+  {
+    "id": 244,
+    "lesson": 21,
+    "word": "confirm",
+    "meaning": "تایید کردن"
+  },
+  {
+    "id": 245,
+    "lesson": 21,
+    "word": "verify",
+    "meaning": "راستی‌آزمایی کردن، تایید کردن"
+  },
+  {
+    "id": 246,
+    "lesson": 21,
+    "word": "anticipate",
+    "meaning": "پیش‌بینی کردن، انتظار داشتن"
+  },
+  {
+    "id": 247,
+    "lesson": 21,
+    "word": "dilemma",
+    "meaning": "دوراهی، معضل"
+  },
+  {
+    "id": 248,
+    "lesson": 21,
+    "word": "detour",
+    "meaning": "مسیر انحرافی"
+  },
+  {
+    "id": 249,
+    "lesson": 21,
+    "word": "merit",
+    "meaning": "شایستگی، ارزش"
+  },
+  {
+    "id": 250,
+    "lesson": 21,
+    "word": "transmit",
+    "meaning": "انتقال دادن"
+  },
+  {
+    "id": 251,
+    "lesson": 21,
+    "word": "relieve",
+    "meaning": "تسکین دادن، آسوده کردن"
+  },
+  {
+    "id": 252,
+    "lesson": 21,
+    "word": "baffle",
+    "meaning": "گیج کردن"
+  },
+  {
+    "id": 253,
+    "lesson": 22,
+    "word": "warden",
+    "meaning": "نگهبان، رئیس زندان"
+  },
+  {
+    "id": 254,
+    "lesson": 22,
+    "word": "acknowledge",
+    "meaning": "تصدیق کردن، اذعان کردن"
+  },
+  {
+    "id": 255,
+    "lesson": 22,
+    "word": "justice",
+    "meaning": "عدالت"
+  },
+  {
+    "id": 256,
+    "lesson": 22,
+    "word": "delinquent",
+    "meaning": "بزهکار، متخلف"
+  },
+  {
+    "id": 257,
+    "lesson": 22,
+    "word": "reject",
+    "meaning": "رد کردن"
+  },
+  {
+    "id": 258,
+    "lesson": 22,
+    "word": "deprive",
+    "meaning": "محروم کردن"
+  },
+  {
+    "id": 259,
+    "lesson": 22,
+    "word": "spouse",
+    "meaning": "همسر"
+  },
+  {
+    "id": 260,
+    "lesson": 22,
+    "word": "vocation",
+    "meaning": "شغل، حرفه"
+  },
+  {
+    "id": 261,
+    "lesson": 22,
+    "word": "unstable",
+    "meaning": "ناپایدار"
+  },
+  {
+    "id": 262,
+    "lesson": 22,
+    "word": "homicide",
+    "meaning": "قتل، آدم‌کشی"
+  },
+  {
+    "id": 263,
+    "lesson": 22,
+    "word": "penalize",
+    "meaning": "مجازات کردن"
+  },
+  {
+    "id": 264,
+    "lesson": 22,
+    "word": "beneficiary",
+    "meaning": "ذی‌نفع"
+  },
+  {
+    "id": 265,
+    "lesson": 23,
+    "word": "reptile",
+    "meaning": "خزنده"
+  },
+  {
+    "id": 266,
+    "lesson": 23,
+    "word": "rarely",
+    "meaning": "به‌ندرت"
+  },
+  {
+    "id": 267,
+    "lesson": 23,
+    "word": "forbid",
+    "meaning": "ممنوع کردن"
+  },
+  {
+    "id": 268,
+    "lesson": 23,
+    "word": "logical",
+    "meaning": "منطقی"
+  },
+  {
+    "id": 269,
+    "lesson": 23,
+    "word": "exhibit",
+    "meaning": "به نمایش گذاشتن"
+  },
+  {
+    "id": 270,
+    "lesson": 23,
+    "word": "proceed",
+    "meaning": "ادامه دادن، پیش رفتن"
+  },
+  {
+    "id": 271,
+    "lesson": 23,
+    "word": "precaution",
+    "meaning": "احتیاط، پیشگیری"
+  },
+  {
+    "id": 272,
+    "lesson": 23,
+    "word": "extract",
+    "meaning": "استخراج کردن"
+  },
+  {
+    "id": 273,
+    "lesson": 23,
+    "word": "prior",
+    "meaning": "قبلی، پیشین"
+  },
+  {
+    "id": 274,
+    "lesson": 23,
+    "word": "embrace",
+    "meaning": "در آغوش گرفتن"
+  },
+  {
+    "id": 275,
+    "lesson": 23,
+    "word": "valiant",
+    "meaning": "شجاع، دلیر"
+  },
+  {
+    "id": 276,
+    "lesson": 23,
+    "word": "partial",
+    "meaning": "جزئی، ناقص"
+  },
+  {
+    "id": 277,
+    "lesson": 24,
+    "word": "fierce",
+    "meaning": "وحشی، خشن"
+  },
+  {
+    "id": 278,
+    "lesson": 24,
+    "word": "detest",
+    "meaning": "متنفر بودن از"
+  },
+  {
+    "id": 279,
+    "lesson": 24,
+    "word": "sneer",
+    "meaning": "پوزخند زدن"
+  },
+  {
+    "id": 280,
+    "lesson": 24,
+    "word": "scowl",
+    "meaning": "اخم کردن"
+  },
+  {
+    "id": 281,
+    "lesson": 24,
+    "word": "encourage",
+    "meaning": "تشویق کردن"
+  },
+  {
+    "id": 282,
+    "lesson": 24,
+    "word": "consider",
+    "meaning": "در نظر گرفتن"
+  },
+  {
+    "id": 283,
+    "lesson": 24,
+    "word": "vermin",
+    "meaning": "جانوران موذی"
+  },
+  {
+    "id": 284,
+    "lesson": 24,
+    "word": "wail",
+    "meaning": "ناله کردن، شیون کردن"
+  },
+  {
+    "id": 285,
+    "lesson": 24,
+    "word": "symbol",
+    "meaning": "نماد"
+  },
+  {
+    "id": 286,
+    "lesson": 24,
+    "word": "authority",
+    "meaning": "قدرت، اختیار"
+  },
+  {
+    "id": 287,
+    "lesson": 24,
+    "word": "neutral",
+    "meaning": "بی‌طرف"
+  },
+  {
+    "id": 288,
+    "lesson": 24,
+    "word": "trifle",
+    "meaning": "چیز بی‌اهمیت، مقدار ناچیز"
+  },
+  {
+    "id": 289,
+    "lesson": 25,
+    "word": "architect",
+    "meaning": "معمار"
+  },
+  {
+    "id": 290,
+    "lesson": 25,
+    "word": "matrimony",
+    "meaning": "ازدواج، زناشویی"
+  },
+  {
+    "id": 291,
+    "lesson": 25,
+    "word": "baggage",
+    "meaning": "بار، چمدان"
+  },
+  {
+    "id": 292,
+    "lesson": 25,
+    "word": "squander",
+    "meaning": "هدر دادن، ولخرجی کردن"
+  },
+  {
+    "id": 293,
+    "lesson": 25,
+    "word": "abroad",
+    "meaning": "خارج از کشور"
+  },
+  {
+    "id": 294,
+    "lesson": 25,
+    "word": "fugitive",
+    "meaning": "فراری"
+  },
+  {
+    "id": 295,
+    "lesson": 25,
+    "word": "calamity",
+    "meaning": "مصیبت، بلا"
+  },
+  {
+    "id": 296,
+    "lesson": 25,
+    "word": "pauper",
+    "meaning": "فرد فقیر"
+  },
+  {
+    "id": 297,
+    "lesson": 25,
+    "word": "envy",
+    "meaning": "حسادت"
+  },
+  {
+    "id": 298,
+    "lesson": 25,
+    "word": "collapse",
+    "meaning": "فروپاشی، سقوط کردن"
+  },
+  {
+    "id": 299,
+    "lesson": 25,
+    "word": "prosecute",
+    "meaning": "تعقیب قضایی کردن"
+  },
+  {
+    "id": 300,
+    "lesson": 25,
+    "word": "bigamy",
+    "meaning": "دوهمسری غیرقانونی"
+  },
+  {
+    "id": 301,
+    "lesson": 26,
+    "word": "possible",
+    "meaning": "ممکن"
+  },
+  {
+    "id": 302,
+    "lesson": 26,
+    "word": "compel",
+    "meaning": "مجبور کردن"
+  },
+  {
+    "id": 303,
+    "lesson": 26,
+    "word": "awkward",
+    "meaning": "ناشیانه، معذب‌کننده"
+  },
+  {
+    "id": 304,
+    "lesson": 26,
+    "word": "venture",
+    "meaning": "کار مخاطره‌آمیز، جرأت کردن"
+  },
+  {
+    "id": 305,
+    "lesson": 26,
+    "word": "awesome",
+    "meaning": "شگفت‌انگیز، هیبت‌آور"
+  },
+  {
+    "id": 306,
+    "lesson": 26,
+    "word": "guide",
+    "meaning": "راهنما"
+  },
+  {
+    "id": 307,
+    "lesson": 26,
+    "word": "quench",
+    "meaning": "فرونشاندن، خاموش کردن"
+  },
+  {
+    "id": 308,
+    "lesson": 26,
+    "word": "betray",
+    "meaning": "خیانت کردن"
+  },
+  {
+    "id": 309,
+    "lesson": 26,
+    "word": "utter",
+    "meaning": "بر زبان آوردن"
+  },
+  {
+    "id": 310,
+    "lesson": 26,
+    "word": "pacify",
+    "meaning": "آرام کردن"
+  },
+  {
+    "id": 311,
+    "lesson": 26,
+    "word": "respond",
+    "meaning": "پاسخ دادن"
+  },
+  {
+    "id": 312,
+    "lesson": 26,
+    "word": "beckon",
+    "meaning": "با اشاره فراخواندن"
+  },
+  {
+    "id": 313,
+    "lesson": 27,
+    "word": "despite",
+    "meaning": "به‌رغم"
+  },
+  {
+    "id": 314,
+    "lesson": 27,
+    "word": "disrupt",
+    "meaning": "مختل کردن"
+  },
+  {
+    "id": 315,
+    "lesson": 27,
+    "word": "rash",
+    "meaning": "عجولانه، جوش پوستی"
+  },
+  {
+    "id": 316,
+    "lesson": 27,
+    "word": "rapid",
+    "meaning": "سریع"
+  },
+  {
+    "id": 317,
+    "lesson": 27,
+    "word": "exhaust",
+    "meaning": "خسته کردن، تمام کردن"
+  },
+  {
+    "id": 318,
+    "lesson": 27,
+    "word": "severity",
+    "meaning": "شدت، سختگیری"
+  },
+  {
+    "id": 319,
+    "lesson": 27,
+    "word": "feeble",
+    "meaning": "ضعیف"
+  },
+  {
+    "id": 320,
+    "lesson": 27,
+    "word": "unite",
+    "meaning": "متحد کردن"
+  },
+  {
+    "id": 321,
+    "lesson": 27,
+    "word": "cease",
+    "meaning": "متوقف کردن"
+  },
+  {
+    "id": 322,
+    "lesson": 27,
+    "word": "thrifty",
+    "meaning": "صرفه‌جو"
+  },
+  {
+    "id": 323,
+    "lesson": 27,
+    "word": "miserly",
+    "meaning": "خسیس"
+  },
+  {
+    "id": 324,
+    "lesson": 27,
+    "word": "monarch",
+    "meaning": "پادشاه، سلطان"
+  },
+  {
+    "id": 325,
+    "lesson": 28,
+    "word": "outlaw",
+    "meaning": "یاغی، خارج از قانون"
+  },
+  {
+    "id": 326,
+    "lesson": 28,
+    "word": "promote",
+    "meaning": "ترفیع دادن، ترویج کردن"
+  },
+  {
+    "id": 327,
+    "lesson": 28,
+    "word": "undernourished",
+    "meaning": "دچار سوءتغذیه"
+  },
+  {
+    "id": 328,
+    "lesson": 28,
+    "word": "illustrate",
+    "meaning": "نشان دادن، مثال زدن"
+  },
+  {
+    "id": 329,
+    "lesson": 28,
+    "word": "disclose",
+    "meaning": "افشا کردن"
+  },
+  {
+    "id": 330,
+    "lesson": 28,
+    "word": "excessive",
+    "meaning": "بیش از حد"
+  },
+  {
+    "id": 331,
+    "lesson": 28,
+    "word": "disaster",
+    "meaning": "فاجعه"
+  },
+  {
+    "id": 332,
+    "lesson": 28,
+    "word": "censor",
+    "meaning": "سانسورچی، سانسور کردن"
+  },
+  {
+    "id": 333,
+    "lesson": 28,
+    "word": "culprit",
+    "meaning": "مقصر، مجرم"
+  },
+  {
+    "id": 334,
+    "lesson": 28,
+    "word": "juvenile",
+    "meaning": "نوجوان، جوان"
+  },
+  {
+    "id": 335,
+    "lesson": 28,
+    "word": "bait",
+    "meaning": "طعمه"
+  },
+  {
+    "id": 336,
+    "lesson": 28,
+    "word": "insist",
+    "meaning": "اصرار کردن"
+  },
+  {
+    "id": 337,
+    "lesson": 29,
+    "word": "toil",
+    "meaning": "کار سخت"
+  },
+  {
+    "id": 338,
+    "lesson": 29,
+    "word": "blunder",
+    "meaning": "اشتباه فاحش"
+  },
+  {
+    "id": 339,
+    "lesson": 29,
+    "word": "daze",
+    "meaning": "گیج کردن"
+  },
+  {
+    "id": 340,
+    "lesson": 29,
+    "word": "mourn",
+    "meaning": "عزاداری کردن"
+  },
+  {
+    "id": 341,
+    "lesson": 29,
+    "word": "subside",
+    "meaning": "فروکش کردن"
+  },
+  {
+    "id": 342,
+    "lesson": 29,
+    "word": "maim",
+    "meaning": "ناقص کردن، معلول کردن"
+  },
+  {
+    "id": 343,
+    "lesson": 29,
+    "word": "comprehend",
+    "meaning": "درک کردن، فهمیدن"
+  },
+  {
+    "id": 344,
+    "lesson": 29,
+    "word": "commend",
+    "meaning": "تحسین کردن، ستودن"
+  },
+  {
+    "id": 345,
+    "lesson": 29,
+    "word": "final",
+    "meaning": "نهایی، آخر"
+  },
+  {
+    "id": 346,
+    "lesson": 29,
+    "word": "exempt",
+    "meaning": "معاف کردن، معاف"
+  },
+  {
+    "id": 347,
+    "lesson": 29,
+    "word": "vain",
+    "meaning": "بیهوده، خودپسند"
+  },
+  {
+    "id": 348,
+    "lesson": 29,
+    "word": "repetition",
+    "meaning": "تکرار"
+  },
+  {
+    "id": 349,
+    "lesson": 30,
+    "word": "depict",
+    "meaning": "به تصویر کشیدن، توصیف کردن"
+  },
+  {
+    "id": 350,
+    "lesson": 30,
+    "word": "mortal",
+    "meaning": "فانی، مرگ‌آور"
+  },
+  {
+    "id": 351,
+    "lesson": 30,
+    "word": "novel",
+    "meaning": "رمان، بدیع و تازه"
+  },
+  {
+    "id": 352,
+    "lesson": 30,
+    "word": "occupant",
+    "meaning": "ساکن، متصرف"
+  },
+  {
+    "id": 353,
+    "lesson": 30,
+    "word": "appoint",
+    "meaning": "منصوب کردن، تعیین کردن"
+  },
+  {
+    "id": 354,
+    "lesson": 30,
+    "word": "quarter",
+    "meaning": "ناحیه، یک‌چهارم"
+  },
+  {
+    "id": 355,
+    "lesson": 30,
+    "word": "site",
+    "meaning": "محل، موقعیت"
+  },
+  {
+    "id": 356,
+    "lesson": 30,
+    "word": "quote",
+    "meaning": "نقل قول کردن"
+  },
+  {
+    "id": 357,
+    "lesson": 30,
+    "word": "verse",
+    "meaning": "شعر، بیت"
+  },
+  {
+    "id": 358,
+    "lesson": 30,
+    "word": "morality",
+    "meaning": "اخلاق"
+  },
+  {
+    "id": 359,
+    "lesson": 30,
+    "word": "roam",
+    "meaning": "پرسه زدن"
+  },
+  {
+    "id": 360,
+    "lesson": 30,
+    "word": "attract",
+    "meaning": "جذب کردن"
+  },
+  {
+    "id": 361,
+    "lesson": 31,
+    "word": "commuter",
+    "meaning": "مسافر روزانه (رفت‌وآمد بین خانه و محل کار)"
+  },
+  {
+    "id": 362,
+    "lesson": 31,
+    "word": "confine",
+    "meaning": "محدود کردن"
+  },
+  {
+    "id": 363,
+    "lesson": 31,
+    "word": "idle",
+    "meaning": "بیکار، تنبل"
+  },
+  {
+    "id": 364,
+    "lesson": 31,
+    "word": "idol",
+    "meaning": "بت، معبود"
+  },
+  {
+    "id": 365,
+    "lesson": 31,
+    "word": "jest",
+    "meaning": "شوخی"
+  },
+  {
+    "id": 366,
+    "lesson": 31,
+    "word": "patriotic",
+    "meaning": "میهن‌پرستانه"
+  },
+  {
+    "id": 367,
+    "lesson": 31,
+    "word": "dispute",
+    "meaning": "اختلاف، مناقشه"
+  },
+  {
+    "id": 368,
+    "lesson": 31,
+    "word": "valor",
+    "meaning": "شجاعت"
+  },
+  {
+    "id": 369,
+    "lesson": 31,
+    "word": "lunatic",
+    "meaning": "دیوانه"
+  },
+  {
+    "id": 370,
+    "lesson": 31,
+    "word": "vein",
+    "meaning": "رگ"
+  },
+  {
+    "id": 371,
+    "lesson": 31,
+    "word": "uneventful",
+    "meaning": "بدون اتفاق خاص"
+  },
+  {
+    "id": 372,
+    "lesson": 31,
+    "word": "fertile",
+    "meaning": "حاصلخیز"
+  },
+  {
+    "id": 373,
+    "lesson": 32,
+    "word": "refer",
+    "meaning": "ارجاع دادن، اشاره کردن"
+  },
+  {
+    "id": 374,
+    "lesson": 32,
+    "word": "distress",
+    "meaning": "رنج، پریشانی"
+  },
+  {
+    "id": 375,
+    "lesson": 32,
+    "word": "diminish",
+    "meaning": "کاهش یافتن، کم شدن"
+  },
+  {
+    "id": 376,
+    "lesson": 32,
+    "word": "maximum",
+    "meaning": "حداکثر"
+  },
+  {
+    "id": 377,
+    "lesson": 32,
+    "word": "flee",
+    "meaning": "فرار کردن"
+  },
+  {
+    "id": 378,
+    "lesson": 32,
+    "word": "vulnerable",
+    "meaning": "آسیب‌پذیر"
+  },
+  {
+    "id": 379,
+    "lesson": 32,
+    "word": "signify",
+    "meaning": "نشان دادن، معنا دادن"
+  },
+  {
+    "id": 380,
+    "lesson": 32,
+    "word": "mythology",
+    "meaning": "اسطوره‌شناسی"
+  },
+  {
+    "id": 381,
+    "lesson": 32,
+    "word": "provide",
+    "meaning": "فراهم کردن"
+  },
+  {
+    "id": 382,
+    "lesson": 32,
+    "word": "colleague",
+    "meaning": "همکار"
+  },
+  {
+    "id": 383,
+    "lesson": 32,
+    "word": "torment",
+    "meaning": "عذاب دادن، شکنجه"
+  },
+  {
+    "id": 384,
+    "lesson": 32,
+    "word": "loyalty",
+    "meaning": "وفاداری"
+  },
+  {
+    "id": 385,
+    "lesson": 33,
+    "word": "volunteer",
+    "meaning": "داوطلب"
+  },
+  {
+    "id": 386,
+    "lesson": 33,
+    "word": "prejudice",
+    "meaning": "پیش‌داوری، تعصب"
+  },
+  {
+    "id": 387,
+    "lesson": 33,
+    "word": "shrill",
+    "meaning": "زیر و نافذ (صدا)"
+  },
+  {
+    "id": 388,
+    "lesson": 33,
+    "word": "jolly",
+    "meaning": "بانشاط، خوش‌مشرب"
+  },
+  {
+    "id": 389,
+    "lesson": 33,
+    "word": "witty",
+    "meaning": "شوخ‌طبع، بذله‌گو"
+  },
+  {
+    "id": 390,
+    "lesson": 33,
+    "word": "hinder",
+    "meaning": "مانع شدن"
+  },
+  {
+    "id": 391,
+    "lesson": 33,
+    "word": "lecture",
+    "meaning": "سخنرانی"
+  },
+  {
+    "id": 392,
+    "lesson": 33,
+    "word": "abuse",
+    "meaning": "سوءاستفاده کردن، بدرفتاری"
+  },
+  {
+    "id": 393,
+    "lesson": 33,
+    "word": "mumble",
+    "meaning": "نامفهوم صحبت کردن"
+  },
+  {
+    "id": 394,
+    "lesson": 33,
+    "word": "mute",
+    "meaning": "لال، ساکت"
+  },
+  {
+    "id": 395,
+    "lesson": 33,
+    "word": "wad",
+    "meaning": "توده کوچک و نرم"
+  },
+  {
+    "id": 396,
+    "lesson": 33,
+    "word": "retain",
+    "meaning": "نگه داشتن، حفظ کردن"
+  },
+  {
+    "id": 397,
+    "lesson": 34,
+    "word": "candidate",
+    "meaning": "نامزد (انتخابات)"
+  },
+  {
+    "id": 398,
+    "lesson": 34,
+    "word": "precede",
+    "meaning": "مقدم بودن بر"
+  },
+  {
+    "id": 399,
+    "lesson": 34,
+    "word": "adolescent",
+    "meaning": "نوجوان"
+  },
+  {
+    "id": 400,
+    "lesson": 34,
+    "word": "coeducational",
+    "meaning": "مختلط (آموزش پسر و دختر)"
+  },
+  {
+    "id": 401,
+    "lesson": 34,
+    "word": "radical",
+    "meaning": "ریشه‌ای، افراطی"
+  },
+  {
+    "id": 402,
+    "lesson": 34,
+    "word": "spontaneous",
+    "meaning": "خودجوش، بی‌برنامه"
+  },
+  {
+    "id": 403,
+    "lesson": 34,
+    "word": "skim",
+    "meaning": "سرسری خواندن، از رو گذشتن"
+  },
+  {
+    "id": 404,
+    "lesson": 34,
+    "word": "vaccinate",
+    "meaning": "واکسینه کردن"
+  },
+  {
+    "id": 405,
+    "lesson": 34,
+    "word": "untidy",
+    "meaning": "نامرتب"
+  },
+  {
+    "id": 406,
+    "lesson": 34,
+    "word": "utensil",
+    "meaning": "ظرف، ابزار"
+  },
+  {
+    "id": 407,
+    "lesson": 34,
+    "word": "sensitive",
+    "meaning": "حساس"
+  },
+  {
+    "id": 408,
+    "lesson": 34,
+    "word": "temperate",
+    "meaning": "معتدل"
+  },
+  {
+    "id": 409,
+    "lesson": 35,
+    "word": "vague",
+    "meaning": "مبهم"
+  },
+  {
+    "id": 410,
+    "lesson": 35,
+    "word": "elevate",
+    "meaning": "بالا بردن"
+  },
+  {
+    "id": 411,
+    "lesson": 35,
+    "word": "lottery",
+    "meaning": "قرعه‌کشی، بخت‌آزمایی"
+  },
+  {
+    "id": 412,
+    "lesson": 35,
+    "word": "finance",
+    "meaning": "مالیه، تامین مالی کردن"
+  },
+  {
+    "id": 413,
+    "lesson": 35,
+    "word": "obtain",
+    "meaning": "به دست آوردن"
+  },
+  {
+    "id": 414,
+    "lesson": 35,
+    "word": "cinema",
+    "meaning": "سینما"
+  },
+  {
+    "id": 415,
+    "lesson": 35,
+    "word": "event",
+    "meaning": "رویداد"
+  },
+  {
+    "id": 416,
+    "lesson": 35,
+    "word": "discard",
+    "meaning": "دور انداختن"
+  },
+  {
+    "id": 417,
+    "lesson": 35,
+    "word": "soar",
+    "meaning": "اوج گرفتن"
+  },
+  {
+    "id": 418,
+    "lesson": 35,
+    "word": "subsequent",
+    "meaning": "بعدی، پس از آن"
+  },
+  {
+    "id": 419,
+    "lesson": 35,
+    "word": "relate",
+    "meaning": "مرتبط بودن، بازگو کردن"
+  },
+  {
+    "id": 420,
+    "lesson": 35,
+    "word": "stationary",
+    "meaning": "ثابت، بی‌حرکت"
+  },
+  {
+    "id": 421,
+    "lesson": 36,
+    "word": "prompt",
+    "meaning": "سریع، فوری"
+  },
+  {
+    "id": 422,
+    "lesson": 36,
+    "word": "hasty",
+    "meaning": "عجولانه"
+  },
+  {
+    "id": 423,
+    "lesson": 36,
+    "word": "scorch",
+    "meaning": "سوزاندن (سطحی)"
+  },
+  {
+    "id": 424,
+    "lesson": 36,
+    "word": "tempest",
+    "meaning": "طوفان شدید"
+  },
+  {
+    "id": 425,
+    "lesson": 36,
+    "word": "soothe",
+    "meaning": "آرام کردن، تسکین دادن"
+  },
+  {
+    "id": 426,
+    "lesson": 36,
+    "word": "sympathetic",
+    "meaning": "همدل، دلسوز"
+  },
+  {
+    "id": 427,
+    "lesson": 36,
+    "word": "redeem",
+    "meaning": "جبران کردن، بازخرید کردن"
+  },
+  {
+    "id": 428,
+    "lesson": 36,
+    "word": "resume",
+    "meaning": "از سر گرفتن"
+  },
+  {
+    "id": 429,
+    "lesson": 36,
+    "word": "harmony",
+    "meaning": "هماهنگی"
+  },
+  {
+    "id": 430,
+    "lesson": 36,
+    "word": "refrain",
+    "meaning": "خودداری کردن"
+  },
+  {
+    "id": 431,
+    "lesson": 36,
+    "word": "illegal",
+    "meaning": "غیرقانونی"
+  },
+  {
+    "id": 432,
+    "lesson": 36,
+    "word": "narcotic",
+    "meaning": "مخدر"
+  },
+  {
+    "id": 433,
+    "lesson": 37,
+    "word": "heir",
+    "meaning": "وارث"
+  },
+  {
+    "id": 434,
+    "lesson": 37,
+    "word": "majestic",
+    "meaning": "باشکوه، پرابهت"
+  },
+  {
+    "id": 435,
+    "lesson": 37,
+    "word": "dwindle",
+    "meaning": "کوچک شدن، کاهش یافتن"
+  },
+  {
+    "id": 436,
+    "lesson": 37,
+    "word": "surplus",
+    "meaning": "مازاد، اضافی"
+  },
+  {
+    "id": 437,
+    "lesson": 37,
+    "word": "traitor",
+    "meaning": "خائن"
+  },
+  {
+    "id": 438,
+    "lesson": 37,
+    "word": "deliberate",
+    "meaning": "عمدی، با دقت بررسی کردن"
+  },
+  {
+    "id": 439,
+    "lesson": 37,
+    "word": "vandal",
+    "meaning": "خرابکار"
+  },
+  {
+    "id": 440,
+    "lesson": 37,
+    "word": "drought",
+    "meaning": "خشکسالی"
+  },
+  {
+    "id": 441,
+    "lesson": 37,
+    "word": "abide",
+    "meaning": "پایبند بودن، تحمل کردن"
+  },
+  {
+    "id": 442,
+    "lesson": 37,
+    "word": "unify",
+    "meaning": "متحد کردن، یکپارچه کردن"
+  },
+  {
+    "id": 443,
+    "lesson": 37,
+    "word": "summit",
+    "meaning": "قله، اوج"
+  },
+  {
+    "id": 444,
+    "lesson": 37,
+    "word": "heed",
+    "meaning": "توجه کردن"
+  },
+  {
+    "id": 445,
+    "lesson": 38,
+    "word": "biography",
+    "meaning": "زندگی‌نامه"
+  },
+  {
+    "id": 446,
+    "lesson": 38,
+    "word": "drench",
+    "meaning": "خیس کردن"
+  },
+  {
+    "id": 447,
+    "lesson": 38,
+    "word": "swarm",
+    "meaning": "ازدحام، دسته حشرات"
+  },
+  {
+    "id": 448,
+    "lesson": 38,
+    "word": "wobble",
+    "meaning": "تلوتلو خوردن"
+  },
+  {
+    "id": 449,
+    "lesson": 38,
+    "word": "tumult",
+    "meaning": "غوغا، آشوب"
+  },
+  {
+    "id": 450,
+    "lesson": 38,
+    "word": "kneel",
+    "meaning": "زانو زدن"
+  },
+  {
+    "id": 451,
+    "lesson": 38,
+    "word": "dejected",
+    "meaning": "افسرده، دلسرد"
+  },
+  {
+    "id": 452,
+    "lesson": 38,
+    "word": "obedient",
+    "meaning": "مطیع، فرمانبردار"
+  },
+  {
+    "id": 453,
+    "lesson": 38,
+    "word": "recede",
+    "meaning": "عقب نشستن، دور شدن"
+  },
+  {
+    "id": 454,
+    "lesson": 38,
+    "word": "tyrant",
+    "meaning": "ظالم، مستبد"
+  },
+  {
+    "id": 455,
+    "lesson": 38,
+    "word": "charity",
+    "meaning": "خیریه، نیکوکاری"
+  },
+  {
+    "id": 456,
+    "lesson": 38,
+    "word": "verdict",
+    "meaning": "رأی دادگاه، حکم"
+  },
+  {
+    "id": 457,
+    "lesson": 39,
+    "word": "unearth",
+    "meaning": "کشف کردن، از زیر خاک بیرون آوردن"
+  },
+  {
+    "id": 458,
+    "lesson": 39,
+    "word": "depart",
+    "meaning": "عزیمت کردن، رفتن"
+  },
+  {
+    "id": 459,
+    "lesson": 39,
+    "word": "coincide",
+    "meaning": "همزمان بودن، منطبق بودن"
+  },
+  {
+    "id": 460,
+    "lesson": 39,
+    "word": "cancel",
+    "meaning": "لغو کردن"
+  },
+  {
+    "id": 461,
+    "lesson": 39,
+    "word": "debtor",
+    "meaning": "بدهکار"
+  },
+  {
+    "id": 462,
+    "lesson": 39,
+    "word": "legible",
+    "meaning": "خوانا"
+  },
+  {
+    "id": 463,
+    "lesson": 39,
+    "word": "placard",
+    "meaning": "پلاکارد، آگهی دیواری"
+  },
+  {
+    "id": 464,
+    "lesson": 39,
+    "word": "contagious",
+    "meaning": "مسری"
+  },
+  {
+    "id": 465,
+    "lesson": 39,
+    "word": "clergy",
+    "meaning": "روحانیون"
+  },
+  {
+    "id": 466,
+    "lesson": 39,
+    "word": "customary",
+    "meaning": "معمول، مرسوم"
+  },
+  {
+    "id": 467,
+    "lesson": 39,
+    "word": "transparent",
+    "meaning": "شفاف"
+  },
+  {
+    "id": 468,
+    "lesson": 39,
+    "word": "scald",
+    "meaning": "با مایع داغ سوزاندن"
+  },
+  {
+    "id": 469,
+    "lesson": 40,
+    "word": "epidemic",
+    "meaning": "بیماری همه‌گیر"
+  },
+  {
+    "id": 470,
+    "lesson": 40,
+    "word": "obesity",
+    "meaning": "چاقی مفرط"
+  },
+  {
+    "id": 471,
+    "lesson": 40,
+    "word": "magnify",
+    "meaning": "بزرگ‌نمایی کردن"
+  },
+  {
+    "id": 472,
+    "lesson": 40,
+    "word": "chiropractor",
+    "meaning": "درمانگر ستون فقرات (کایروپراکتیک)"
+  },
+  {
+    "id": 473,
+    "lesson": 40,
+    "word": "obstacle",
+    "meaning": "مانع"
+  },
+  {
+    "id": 474,
+    "lesson": 40,
+    "word": "ventilate",
+    "meaning": "تهویه کردن"
+  },
+  {
+    "id": 475,
+    "lesson": 40,
+    "word": "jeopardize",
+    "meaning": "به خطر انداختن"
+  },
+  {
+    "id": 476,
+    "lesson": 40,
+    "word": "negative",
+    "meaning": "منفی"
+  },
+  {
+    "id": 477,
+    "lesson": 40,
+    "word": "pension",
+    "meaning": "مستمری، حقوق بازنشستگی"
+  },
+  {
+    "id": 478,
+    "lesson": 40,
+    "word": "vital",
+    "meaning": "حیاتی"
+  },
+  {
+    "id": 479,
+    "lesson": 40,
+    "word": "municipal",
+    "meaning": "شهرداری، شهری"
+  },
+  {
+    "id": 480,
+    "lesson": 40,
+    "word": "oral",
+    "meaning": "شفاهی، دهانی"
+  },
+  {
+    "id": 481,
+    "lesson": 41,
+    "word": "complacent",
+    "meaning": "از خود راضی"
+  },
+  {
+    "id": 482,
+    "lesson": 41,
+    "word": "wasp",
+    "meaning": "زنبور"
+  },
+  {
+    "id": 483,
+    "lesson": 41,
+    "word": "rehabilitate",
+    "meaning": "بازتوانی کردن، احیا کردن"
+  },
+  {
+    "id": 484,
+    "lesson": 41,
+    "word": "parole",
+    "meaning": "آزادی مشروط"
+  },
+  {
+    "id": 485,
+    "lesson": 41,
+    "word": "vertical",
+    "meaning": "عمودی"
+  },
+  {
+    "id": 486,
+    "lesson": 41,
+    "word": "multitude",
+    "meaning": "جمعیت زیاد، انبوه"
+  },
+  {
+    "id": 487,
+    "lesson": 41,
+    "word": "nominate",
+    "meaning": "نامزد کردن، معرفی کردن"
+  },
+  {
+    "id": 488,
+    "lesson": 41,
+    "word": "potential",
+    "meaning": "بالقوه، توانمندی نهفته"
+  },
+  {
+    "id": 489,
+    "lesson": 41,
+    "word": "morgue",
+    "meaning": "سردخانه"
+  },
+  {
+    "id": 490,
+    "lesson": 41,
+    "word": "preoccupied",
+    "meaning": "ذهنش مشغول، درگیر فکری"
+  },
+  {
+    "id": 491,
+    "lesson": 41,
+    "word": "upholstery",
+    "meaning": "رویه و تودوزی مبلمان"
+  },
+  {
+    "id": 492,
+    "lesson": 41,
+    "word": "indifference",
+    "meaning": "بی‌تفاوتی"
+  },
+  {
+    "id": 493,
+    "lesson": 42,
+    "word": "maintain",
+    "meaning": "نگه داشتن، حفظ کردن"
+  },
+  {
+    "id": 494,
+    "lesson": 42,
+    "word": "snub",
+    "meaning": "با بی‌اعتنایی رفتار کردن"
+  },
+  {
+    "id": 495,
+    "lesson": 42,
+    "word": "endure",
+    "meaning": "تحمل کردن"
+  },
+  {
+    "id": 496,
+    "lesson": 42,
+    "word": "wrath",
+    "meaning": "خشم شدید"
+  },
+  {
+    "id": 497,
+    "lesson": 42,
+    "word": "expose",
+    "meaning": "افشا کردن، در معرض قرار دادن"
+  },
+  {
+    "id": 498,
+    "lesson": 42,
+    "word": "legend",
+    "meaning": "افسانه"
+  },
+  {
+    "id": 499,
+    "lesson": 42,
+    "word": "ponder",
+    "meaning": "تامل کردن"
+  },
+  {
+    "id": 500,
+    "lesson": 42,
+    "word": "resign",
+    "meaning": "استعفا دادن"
+  },
+  {
+    "id": 501,
+    "lesson": 42,
+    "word": "drastic",
+    "meaning": "شدید، رادیکال"
+  },
+  {
+    "id": 502,
+    "lesson": 42,
+    "word": "wharf",
+    "meaning": "اسکله"
+  },
+  {
+    "id": 503,
+    "lesson": 42,
+    "word": "amend",
+    "meaning": "اصلاح کردن"
+  },
+  {
+    "id": 504,
+    "lesson": 42,
+    "word": "ballot",
+    "meaning": "رأی‌گیری، برگه رأی"
+  }
+]

@@ -1,0 +1,155 @@
+:root {
+  --bg: #f5f6fa;
+  --card-bg: #ffffff;
+  --text: #1c1e21;
+  --muted: #6b7280;
+  --accent: #3b5bdb;
+  --accent-soft: #e8ecfd;
+  --star: #f5b301;
+  --border: #e2e4e9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14151a;
+    --card-bg: #1e2027;
+    --text: #f0f1f5;
+    --muted: #9aa0ab;
+    --accent: #7c93ff;
+    --accent-soft: #262b45;
+    --star: #ffcb45;
+    --border: #2c2e37;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 24px 20px 40px;
+}
+
+.app-header h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px 8px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: var(--accent);
+  color: white;
+}
+
+.progress-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 4px 8px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 48px 24px;
+  text-align: center;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.word {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.meaning-toggle {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.meaning {
+  font-size: 1.3rem;
+  direction: rtl;
+  color: var(--text);
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ctrl-btn {
+  flex: 1;
+  padding: 14px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.ctrl-btn:active {
+  transform: scale(0.97);
+}
+
+.save-btn {
+  flex: 1.2;
+  color: var(--star);
+  border-color: var(--star);
+  font-weight: 600;
+}
+
+.save-btn.saved {
+  background: var(--star);
+  color: #1c1e21;
+}
+
+.empty-msg {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 32px;
+}
