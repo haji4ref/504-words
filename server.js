@@ -52,6 +52,6 @@ app.delete('/api/saved/:id', (req, res) => {
   res.json({ ok: true });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`504 Words app running at http://localhost:${PORT}`);
 });
