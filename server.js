@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4504;
 
 const WORDS_PATH = path.join(__dirname, 'data', 'words.json');
 const SAVED_PATH = path.join(__dirname, 'data', 'saved-words.json');
@@ -96,6 +96,6 @@ app.post('/api/custom-words', (req, res) => {
   res.status(201).json(newWord);
 });
 
-app.listen(4504, '0.0.0.0', () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`504 Words app running at http://0.0.0.0:${PORT}`);
 });
