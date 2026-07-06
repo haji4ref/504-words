@@ -75,7 +75,6 @@ app.delete('/api/saved/:id', (req, res) => {
 app.post('/api/custom-words', (req, res) => {
   const word = (req.body.word || '').trim();
   const meaning = (req.body.meaning || '').trim();
-  const label = (req.body.label || '').trim();
 
   if (!word || !meaning) {
     return res.status(400).json({ error: 'Word and meaning are required' });
@@ -85,7 +84,7 @@ app.post('/api/custom-words', (req, res) => {
     ? Math.max(...customWords.map((w) => w.id)) + 1
     : CUSTOM_ID_START;
 
-  const newWord = { id: nextId, word, meaning, label: label || null, custom: true };
+  const newWord = { id: nextId, word, meaning, label: 'Custom', custom: true };
   customWords.push(newWord);
   wordsById.set(newWord.id, newWord);
   writeCustomWords();
@@ -97,6 +96,6 @@ app.post('/api/custom-words', (req, res) => {
   res.status(201).json(newWord);
 });
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`504 Words app running at http://localhost:${PORT}`);
+app.listen(4504, '0.0.0.0', () => {
+  console.log(`504 Words app running at http://0.0.0.0:${PORT}`);
 });

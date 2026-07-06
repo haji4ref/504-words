@@ -4,7 +4,7 @@ let allWords = [];
 let savedWords = [];
 let savedIdSet = new Set();
 
-let mode = 'all'; // 'all' | 'saved'
+let mode = 'all'; // 'all' | 'saved' | 'add'
 let index = 0;
 let meaningVisible = false;
 
@@ -13,7 +13,7 @@ function loadState() {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return;
     const state = JSON.parse(raw);
-    if (state.mode === 'all' || state.mode === 'saved') mode = state.mode;
+    if (state.mode === 'all' || state.mode === 'saved' || state.mode === 'add') mode = state.mode;
     if (Number.isInteger(state.index)) index = state.index;
   } catch {
     // ignore corrupt storage
@@ -35,24 +35,36 @@ const saveBtn = document.getElementById('save-btn');
 const savedCountEl = document.getElementById('saved-count');
 const emptyMsg = document.getElementById('empty-msg');
 const wordCard = document.getElementById('word-card');
-const controls = document.querySelector('.controls');
+const controls = document.getElementById('controls');
+const progressRow = document.getElementById('progress-row');
 const tabBtns = document.querySelectorAll('.tab-btn');
-const addWordToggle = document.getElementById('add-word-toggle');
+const addWordSection = document.getElementById('add-word-section');
 const addWordForm = document.getElementById('add-word-form');
-const addWordCancel = document.getElementById('add-word-cancel');
 const addWordInput = document.getElementById('add-word-input');
 const addMeaningInput = document.getElementById('add-meaning-input');
-const addLabelInput = document.getElementById('add-label-input');
 
 function currentList() {
   return mode === 'all' ? allWords : savedWords;
 }
 
 function render() {
-  const list = currentList();
   savedCountEl.textContent = savedWords.length;
 
+  if (mode === 'add') {
+    progressRow.hidden = true;
+    wordCard.hidden = true;
+    controls.hidden = true;
+    emptyMsg.hidden = true;
+    addWordSection.hidden = false;
+    saveState();
+    return;
+  }
+  addWordSection.hidden = true;
+
+  const list = currentList();
+
   if (list.length === 0) {
+    progressRow.hidden = false;
     wordCard.hidden = true;
     controls.hidden = true;
     emptyMsg.hidden = false;
@@ -62,6 +74,7 @@ function render() {
     return;
   }
 
+  progressRow.hidden = false;
   wordCard.hidden = false;
   controls.hidden = false;
   emptyMsg.hidden = true;
@@ -112,18 +125,21 @@ meaningToggle.addEventListener('click', () => {
 });
 
 prevBtn.addEventListener('click', () => {
+  if (mode === 'add') return;
   const list = currentList();
   if (list.length === 0) return;
   showWord((index - 1 + list.length) % list.length);
 });
 
 nextBtn.addEventListener('click', () => {
+  if (mode === 'add') return;
   const list = currentList();
   if (list.length === 0) return;
   showWord((index + 1) % list.length);
 });
 
 saveBtn.addEventListener('click', async () => {
+  if (mode === 'add') return;
   const list = currentList();
   if (list.length === 0) return;
   const w = list[index];
@@ -147,58 +163,45 @@ saveBtn.addEventListener('click', async () => {
   render();
 });
 
-function openAddWordForm() {
-  addWordForm.hidden = false;
-  addWordToggle.hidden = true;
-  addWordInput.focus();
+function switchMode(newMode) {
+  tabBtns.forEach((b) => b.classList.toggle('active', b.dataset.mode === newMode));
+  mode = newMode;
+  index = 0;
+  meaningVisible = false;
+  render();
+  if (mode === 'add') addWordInput.focus();
 }
-
-function closeAddWordForm() {
-  addWordForm.hidden = true;
-  addWordToggle.hidden = false;
-  addWordForm.reset();
-}
-
-addWordToggle.addEventListener('click', openAddWordForm);
-addWordCancel.addEventListener('click', closeAddWordForm);
 
 addWordForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const word = addWordInput.value.trim();
   const meaning = addMeaningInput.value.trim();
-  const label = addLabelInput.value.trim();
   if (!word || !meaning) return;
 
   const res = await fetch('/api/custom-words', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ word, meaning, label }),
+    body: JSON.stringify({ word, meaning }),
   });
   if (!res.ok) return;
   const newWord = await res.json();
 
   savedIdSet.add(newWord.id);
   savedWords.push(newWord);
+  addWordForm.reset();
 
-  closeAddWordForm();
-
-  tabBtns.forEach((b) => b.classList.toggle('active', b.dataset.mode === 'saved'));
-  mode = 'saved';
+  switchMode('saved');
   showWord(savedWords.length - 1);
 });
 
 tabBtns.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    tabBtns.forEach((b) => b.classList.remove('active'));
-    btn.classList.add('active');
-    mode = btn.dataset.mode;
-    showWord(0);
-  });
+  btn.addEventListener('click', () => switchMode(btn.dataset.mode));
 });
 
 document.addEventListener('keydown', (e) => {
   const tag = e.target.tagName;
   if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+  if (mode === 'add') return;
 
   if (e.code === 'ArrowLeft') {
     e.preventDefault();

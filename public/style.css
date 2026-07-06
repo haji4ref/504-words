@@ -154,24 +154,16 @@ body {
   margin-top: 32px;
 }
 
-.add-word-toggle {
-  display: block;
-  width: 100%;
-  margin-top: 16px;
-  padding: 10px;
-  border: 1px dashed var(--border);
-  border-radius: 10px;
-  background: transparent;
-  color: var(--muted);
-  font-size: 0.9rem;
-  cursor: pointer;
+.add-word-section h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 8px 0 16px;
 }
 
 .add-word-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 12px;
   padding: 16px;
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -189,9 +181,4 @@ body {
 
 .add-word-form input#add-meaning-input {
   direction: rtl;
-}
-
-.add-word-actions {
-  display: flex;
-  gap: 10px;
 }

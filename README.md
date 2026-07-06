@@ -6,7 +6,7 @@ A simple web app for learning and memorizing the "504 Absolutely Essential Words
 
 - **Browse mode** — go through all 504 words one by one, grouped by lesson (1–42), with the Persian meaning hidden until you ask for it.
 - **Saved words mode** — save any word you want to review later, and go through only your saved list the same way.
-- **Custom words** — add your own word, meaning, and an optional label directly from the app; it's saved straight into the Saved Words list.
+- **Add Word tab** — a dedicated section for adding your own word + Persian meaning; it's saved straight into the Saved Words list and labeled "Custom".
 - Keyboard shortcuts: `←` / `→` to move between words, `Space` to save/unsave the current word.
 - Your position (current word + which mode you were in) is remembered in the browser via `localStorage`, so reloading the page picks up where you left off.
 
@@ -46,13 +46,13 @@ Saved words are stored in `data/saved-words.json`, which is mounted as a volume 
 
 - `data/words.json` contains all 504 words with their lesson number and Persian meaning.
 - `data/saved-words.json` stores the list of word IDs you've saved — it's just a JSON file, no database needed.
-- `data/custom-words.json` stores any words you've added yourself (id, word, meaning, label).
+- `data/custom-words.json` stores any words you've added yourself (id, word, meaning), each labeled "Custom".
 - `server.js` is a small Express server exposing:
   - `GET /api/words` — all 504 book words
   - `GET /api/saved` — your saved words (book + custom)
   - `POST /api/saved` — save a word (`{ "id": <wordId> }`)
   - `DELETE /api/saved/:id` — remove a saved word (deletes it entirely if it's a custom word)
-  - `POST /api/custom-words` — add your own word (`{ "word", "meaning", "label"? }`); it's automatically saved
+  - `POST /api/custom-words` — add your own word (`{ "word", "meaning" }`); it's automatically saved and labeled "Custom"
 - `public/` holds the front end (plain HTML/CSS/JS, no framework).
 
 ## Project structure
