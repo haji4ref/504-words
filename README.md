@@ -6,6 +6,7 @@ A simple web app for learning and memorizing the "504 Absolutely Essential Words
 
 - **Browse mode** — go through all 504 words one by one, grouped by lesson (1–42), with the Persian meaning hidden until you ask for it.
 - **Saved words mode** — save any word you want to review later, and go through only your saved list the same way.
+- **Custom words** — add your own word, meaning, and an optional label directly from the app; it's saved straight into the Saved Words list.
 - Keyboard shortcuts: `←` / `→` to move between words, `Space` to save/unsave the current word.
 - Your position (current word + which mode you were in) is remembered in the browser via `localStorage`, so reloading the page picks up where you left off.
 
@@ -45,11 +46,13 @@ Saved words are stored in `data/saved-words.json`, which is mounted as a volume 
 
 - `data/words.json` contains all 504 words with their lesson number and Persian meaning.
 - `data/saved-words.json` stores the list of word IDs you've saved — it's just a JSON file, no database needed.
+- `data/custom-words.json` stores any words you've added yourself (id, word, meaning, label).
 - `server.js` is a small Express server exposing:
-  - `GET /api/words` — all words
-  - `GET /api/saved` — your saved words
+  - `GET /api/words` — all 504 book words
+  - `GET /api/saved` — your saved words (book + custom)
   - `POST /api/saved` — save a word (`{ "id": <wordId> }`)
-  - `DELETE /api/saved/:id` — remove a saved word
+  - `DELETE /api/saved/:id` — remove a saved word (deletes it entirely if it's a custom word)
+  - `POST /api/custom-words` — add your own word (`{ "word", "meaning", "label"? }`); it's automatically saved
 - `public/` holds the front end (plain HTML/CSS/JS, no framework).
 
 ## Project structure
@@ -58,7 +61,8 @@ Saved words are stored in `data/saved-words.json`, which is mounted as a volume 
 .
 ├── data/
 │   ├── words.json          # all 504 words + Persian meanings
-│   └── saved-words.json    # your saved word IDs
+│   ├── saved-words.json    # your saved word IDs
+│   └── custom-words.json   # words you've added yourself
 ├── public/
 │   ├── index.html
 │   ├── style.css

@@ -37,6 +37,12 @@ const emptyMsg = document.getElementById('empty-msg');
 const wordCard = document.getElementById('word-card');
 const controls = document.querySelector('.controls');
 const tabBtns = document.querySelectorAll('.tab-btn');
+const addWordToggle = document.getElementById('add-word-toggle');
+const addWordForm = document.getElementById('add-word-form');
+const addWordCancel = document.getElementById('add-word-cancel');
+const addWordInput = document.getElementById('add-word-input');
+const addMeaningInput = document.getElementById('add-meaning-input');
+const addLabelInput = document.getElementById('add-label-input');
 
 function currentList() {
   return mode === 'all' ? allWords : savedWords;
@@ -70,7 +76,7 @@ function render() {
   meaningToggle.textContent = meaningVisible ? 'Hide meaning' : 'Show meaning';
 
   positionLabel.textContent = `${index + 1} / ${list.length}`;
-  lessonLabel.textContent = `Lesson ${w.lesson}`;
+  lessonLabel.textContent = w.custom ? (w.label || 'Custom') : `Lesson ${w.lesson}`;
 
   const isSaved = savedIdSet.has(w.id);
   saveBtn.textContent = mode === 'saved' ? '★ Remove' : (isSaved ? '★ Saved' : '☆ Save');
@@ -141,6 +147,46 @@ saveBtn.addEventListener('click', async () => {
   render();
 });
 
+function openAddWordForm() {
+  addWordForm.hidden = false;
+  addWordToggle.hidden = true;
+  addWordInput.focus();
+}
+
+function closeAddWordForm() {
+  addWordForm.hidden = true;
+  addWordToggle.hidden = false;
+  addWordForm.reset();
+}
+
+addWordToggle.addEventListener('click', openAddWordForm);
+addWordCancel.addEventListener('click', closeAddWordForm);
+
+addWordForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const word = addWordInput.value.trim();
+  const meaning = addMeaningInput.value.trim();
+  const label = addLabelInput.value.trim();
+  if (!word || !meaning) return;
+
+  const res = await fetch('/api/custom-words', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ word, meaning, label }),
+  });
+  if (!res.ok) return;
+  const newWord = await res.json();
+
+  savedIdSet.add(newWord.id);
+  savedWords.push(newWord);
+
+  closeAddWordForm();
+
+  tabBtns.forEach((b) => b.classList.toggle('active', b.dataset.mode === 'saved'));
+  mode = 'saved';
+  showWord(savedWords.length - 1);
+});
+
 tabBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
     tabBtns.forEach((b) => b.classList.remove('active'));
@@ -151,6 +197,9 @@ tabBtns.forEach((btn) => {
 });
 
 document.addEventListener('keydown', (e) => {
+  const tag = e.target.tagName;
+  if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+
   if (e.code === 'ArrowLeft') {
     e.preventDefault();
     prevBtn.click();

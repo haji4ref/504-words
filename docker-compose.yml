@@ -2,7 +2,7 @@ services:
   app:
     build: .
     ports:
-      - "${HOST_PORT:-3000}:3000"
+      - "${HOST_PORT:-4504}:3000"
     volumes:
       - ./data:/app/data
     restart: unless-stopped

@@ -17,6 +17,18 @@
     </header>
 
     <main>
+      <button class="add-word-toggle" id="add-word-toggle">+ Add your own word</button>
+
+      <form class="add-word-form" id="add-word-form" hidden>
+        <input type="text" id="add-word-input" placeholder="Word (English)" required />
+        <input type="text" id="add-meaning-input" placeholder="Meaning (Persian)" required />
+        <input type="text" id="add-label-input" placeholder="Label (optional, e.g. Chapter 3)" />
+        <div class="add-word-actions">
+          <button type="submit" class="ctrl-btn save-btn">Add</button>
+          <button type="button" class="ctrl-btn" id="add-word-cancel">Cancel</button>
+        </div>
+      </form>
+
       <div class="progress-row">
         <span id="position-label">-</span>
         <span id="lesson-label"></span>
