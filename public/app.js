@@ -188,10 +188,9 @@ addWordForm.addEventListener('submit', async (e) => {
 
   savedIdSet.add(newWord.id);
   savedWords.push(newWord);
+  savedCountEl.textContent = savedWords.length;
   addWordForm.reset();
-
-  switchMode('saved');
-  showWord(savedWords.length - 1);
+  addWordInput.focus();
 });
 
 tabBtns.forEach((btn) => {
