@@ -1,7 +1,8 @@
 <script setup>
 import { ref, computed } from 'vue';
 
-const FEEDBACK_DELAY_MS = 1000;
+const CORRECT_FEEDBACK_DELAY_MS = 500;
+const INCORRECT_FEEDBACK_DELAY_MS = 3000;
 
 const props = defineProps({
   exam: { type: Object, required: true },
@@ -37,11 +38,12 @@ async function selectOption(optionIndex) {
     feedback.value = updated.questions[answeredIndex];
     selectedOption.value = optionIndex;
 
+    const delay = feedback.value.correct ? CORRECT_FEEDBACK_DELAY_MS : INCORRECT_FEEDBACK_DELAY_MS;
     setTimeout(() => {
       feedback.value = null;
       selectedOption.value = null;
       emit('updated', updated);
-    }, FEEDBACK_DELAY_MS);
+    }, delay);
   } finally {
     submitting.value = false;
   }
