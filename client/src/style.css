@@ -7,6 +7,10 @@
   --accent-soft: #e8ecfd;
   --star: #f5b301;
   --border: #e2e4e9;
+  --correct: #2f9e44;
+  --correct-soft: #d3f9d8;
+  --incorrect: #e03131;
+  --incorrect-soft: #ffe3e3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +23,10 @@
     --accent-soft: #262b45;
     --star: #ffcb45;
     --border: #2c2e37;
+    --correct: #40c057;
+    --correct-soft: #1b3a24;
+    --incorrect: #ff6b6b;
+    --incorrect-soft: #3a1f1f;
   }
 }
 
@@ -185,4 +193,126 @@ body {
 
 .add-word-form input#add-meaning-input {
   direction: rtl;
+}
+
+.exam-empty {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 24px;
+}
+
+.exam-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.exam-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.exam-item:hover {
+  border-color: var(--accent);
+}
+
+.exam-item-status {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.exam-item-status.completed {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.exam-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.exam-option {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 1rem;
+  direction: rtl;
+  cursor: pointer;
+  text-align: center;
+}
+
+.exam-option:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.exam-option:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.exam-option.correct {
+  border-color: var(--correct);
+  background: var(--correct-soft);
+  opacity: 1;
+}
+
+.exam-option.incorrect {
+  border-color: var(--incorrect);
+  background: var(--incorrect-soft);
+  opacity: 1;
+}
+
+.exam-exit-btn {
+  margin-top: 16px;
+}
+
+.exam-report-score {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 8px 0 20px;
+}
+
+.exam-report-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.exam-report-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--correct);
+  background: var(--correct-soft);
+  font-size: 0.9rem;
+}
+
+.exam-report-row.wrong {
+  border-color: var(--incorrect);
+  background: var(--incorrect-soft);
+}
+
+.exam-report-meaning {
+  direction: rtl;
+  text-align: right;
 }

@@ -17,5 +17,8 @@ defineEmits(['switch']);
     <button class="tab-btn" :class="{ active: mode === 'add' }" @click="$emit('switch', 'add')">
       + Add Word
     </button>
+    <button class="tab-btn" :class="{ active: mode === 'exam' }" @click="$emit('switch', 'exam')">
+      Exam
+    </button>
   </nav>
 </template>

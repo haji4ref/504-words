@@ -3,14 +3,16 @@ import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue';
 import TabsNav from './components/TabsNav.vue';
 import WordCard from './components/WordCard.vue';
 import AddWordForm from './components/AddWordForm.vue';
+import ExamSection from './components/ExamSection.vue';
 
 const STORAGE_KEY = '504-words-state';
+const MODES = ['all', 'saved', 'add', 'exam'];
 
 const allWords = ref([]);
 const savedWords = ref([]);
 const loading = ref(true);
 
-const mode = ref('all'); // 'all' | 'saved' | 'add'
+const mode = ref('all'); // 'all' | 'saved' | 'add' | 'exam'
 const index = ref(0);
 const meaningVisible = ref(false);
 
@@ -30,7 +32,7 @@ function loadState() {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return;
     const state = JSON.parse(raw);
-    if (state.mode === 'all' || state.mode === 'saved' || state.mode === 'add') mode.value = state.mode;
+    if (MODES.includes(state.mode)) mode.value = state.mode;
     if (Number.isInteger(state.index)) index.value = state.index;
   } catch {
     // ignore corrupt storage
@@ -62,21 +64,21 @@ function toggleMeaning() {
 }
 
 function goPrev() {
-  if (mode.value === 'add') return;
+  if (mode.value === 'add' || mode.value === 'exam') return;
   const list = currentList.value;
   if (list.length === 0) return;
   showWord((index.value - 1 + list.length) % list.length);
 }
 
 function goNext() {
-  if (mode.value === 'add') return;
+  if (mode.value === 'add' || mode.value === 'exam') return;
   const list = currentList.value;
   if (list.length === 0) return;
   showWord((index.value + 1) % list.length);
 }
 
 async function toggleSave() {
-  if (mode.value === 'add') return;
+  if (mode.value === 'add' || mode.value === 'exam') return;
   const w = currentWord.value;
   if (!w) return;
 
@@ -120,7 +122,7 @@ async function addWord(word, meaning) {
 function onKeydown(e) {
   const tag = e.target.tagName;
   if (tag === 'INPUT' || tag === 'TEXTAREA') return;
-  if (mode.value === 'add') return;
+  if (mode.value === 'add' || mode.value === 'exam') return;
 
   if (e.code === 'ArrowLeft') {
     e.preventDefault();
@@ -153,7 +155,7 @@ onUnmounted(() => {
 
     <main>
       <WordCard
-        v-if="mode !== 'add'"
+        v-if="mode === 'all' || mode === 'saved'"
         :word="currentWord"
         :loading="loading"
         :index="index"
@@ -167,7 +169,9 @@ onUnmounted(() => {
         @toggle-save="toggleSave"
       />
 
-      <AddWordForm v-else ref="addFormRef" :add-word="addWord" />
+      <AddWordForm v-else-if="mode === 'add'" ref="addFormRef" :add-word="addWord" />
+
+      <ExamSection v-else-if="mode === 'exam'" />
     </main>
   </div>
 </template>
