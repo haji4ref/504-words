@@ -1,3 +1,5 @@
 node_modules
+client/node_modules
 data/saved-words.json
 data/custom-words.json
+.env
