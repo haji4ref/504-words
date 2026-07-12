@@ -201,6 +201,40 @@ body {
   margin-top: 24px;
 }
 
+.exam-weak-form {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card-bg);
+}
+
+.exam-weak-form label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.exam-weak-row {
+  display: flex;
+  gap: 10px;
+}
+
+.exam-weak-row input {
+  width: 70px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.exam-weak-row .ctrl-btn {
+  flex: 1;
+}
+
 .exam-list {
   display: flex;
   flex-direction: column;

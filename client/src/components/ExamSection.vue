@@ -8,6 +8,7 @@ const exams = ref([]);
 const activeExam = ref(null);
 const loadingList = ref(true);
 const errorMsg = ref('');
+const weakThreshold = ref(50);
 
 async function loadExams() {
   loadingList.value = true;
@@ -26,6 +27,23 @@ async function openExam(id) {
 async function startNewExam() {
   errorMsg.value = '';
   const res = await fetch('/api/exams', { method: 'POST' });
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
+    errorMsg.value = body.error || 'Could not start exam';
+    return;
+  }
+  activeExam.value = await res.json();
+  view.value = 'run';
+  loadExams();
+}
+
+async function startWeakWordsExam() {
+  errorMsg.value = '';
+  const res = await fetch('/api/exams', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ type: 'weak', threshold: Number(weakThreshold.value) || 50 }),
+  });
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
     errorMsg.value = body.error || 'Could not start exam';
@@ -57,6 +75,21 @@ onMounted(loadExams);
   <div class="exam-section">
     <template v-if="view === 'list'">
       <button class="ctrl-btn save-btn" @click="startNewExam">Start New Exam</button>
+
+      <div class="exam-weak-form">
+        <label for="weak-threshold-input">Weak words exam (correct rate below %)</label>
+        <div class="exam-weak-row">
+          <input
+            id="weak-threshold-input"
+            type="number"
+            min="1"
+            max="100"
+            v-model="weakThreshold"
+          />
+          <button class="ctrl-btn" @click="startWeakWordsExam">Start Weak Words Exam</button>
+        </div>
+      </div>
+
       <p v-if="errorMsg" class="exam-empty">{{ errorMsg }}</p>
 
       <p v-if="!loadingList && exams.length === 0" class="exam-empty">
@@ -65,7 +98,7 @@ onMounted(loadExams);
 
       <div v-else class="exam-list">
         <button v-for="exam in exams" :key="exam.id" class="exam-item" @click="openExam(exam.id)">
-          <span>Exam #{{ exam.id }}</span>
+          <span>Exam #{{ exam.id }}{{ exam.type === 'weak' ? ' (weak words)' : '' }}</span>
           <span class="exam-item-status" :class="{ completed: exam.status === 'completed' }">
             {{
               exam.status === 'completed'

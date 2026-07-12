@@ -81,6 +81,26 @@ function sanitizeExam(exam) {
   return { ...exam, questions: exam.questions.map(sanitizeQuestion) };
 }
 
+function getWeakWordIds(thresholdPercent) {
+  const stats = new Map(); // wordId -> { correct, total }
+  for (const exam of exams) {
+    for (const q of exam.questions) {
+      if (q.selectedIndex === null) continue;
+      const s = stats.get(q.wordId) || { correct: 0, total: 0 };
+      s.total += 1;
+      if (q.correct) s.correct += 1;
+      stats.set(q.wordId, s);
+    }
+  }
+
+  const weakIds = [];
+  for (const [wordId, s] of stats) {
+    const rate = (s.correct / s.total) * 100;
+    if (rate < thresholdPercent) weakIds.push(wordId);
+  }
+  return weakIds;
+}
+
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -150,6 +170,7 @@ app.get('/api/exams', (req, res) => {
   const summaries = exams
     .map((e) => ({
       id: e.id,
+      type: e.type || 'standard',
       createdAt: e.createdAt,
       status: e.status,
       totalQuestions: e.questions.length,
@@ -169,20 +190,38 @@ app.get('/api/exams/:id', (req, res) => {
 });
 
 app.post('/api/exams', (req, res) => {
-  const examWordIds = new Set([...readSavedIds(), ...customWords.map((w) => w.id)]);
-  const savedWordsForExam = Array.from(examWordIds)
+  const { type } = req.body || {};
+  const isWeakExam = type === 'weak';
+
+  let examWordIds;
+  if (isWeakExam) {
+    const threshold = Number(req.body.threshold);
+    const thresholdPercent = Number.isFinite(threshold) && threshold > 0 && threshold <= 100 ? threshold : 50;
+    examWordIds = new Set(getWeakWordIds(thresholdPercent));
+    if (examWordIds.size === 0) {
+      return res.status(400).json({ error: `No words found with a correct rate below ${thresholdPercent}%` });
+    }
+  } else {
+    examWordIds = new Set([...readSavedIds(), ...customWords.map((w) => w.id)]);
+    if (examWordIds.size === 0) {
+      return res.status(400).json({ error: 'No saved or custom words to build an exam from' });
+    }
+  }
+
+  const wordsForExam = Array.from(examWordIds)
     .map((id) => wordsById.get(id))
     .filter(Boolean);
 
-  if (savedWordsForExam.length === 0) {
-    return res.status(400).json({ error: 'No saved or custom words to build an exam from' });
+  if (wordsForExam.length === 0) {
+    return res.status(400).json({ error: 'No words to build an exam from' });
   }
 
   const pool = Array.from(wordsById.values());
-  const questions = shuffle(savedWordsForExam).map((w) => buildQuestion(w, pool));
+  const questions = shuffle(wordsForExam).map((w) => buildQuestion(w, pool));
 
   const exam = {
     id: exams.length ? Math.max(...exams.map((e) => e.id)) + 1 : 1,
+    type: isWeakExam ? 'weak' : 'standard',
     createdAt: new Date().toISOString(),
     status: 'in-progress',
     currentIndex: 0,
