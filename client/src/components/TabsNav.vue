@@ -4,21 +4,27 @@ defineProps({
   savedCount: { type: Number, required: true },
 });
 defineEmits(['switch']);
+
+const tabs = [
+  { key: 'all', label: 'All Words', icon: '📚' },
+  { key: 'saved', label: 'Saved', icon: '⭐' },
+  { key: 'add', label: 'Add', icon: '➕' },
+  { key: 'exam', label: 'Exam', icon: '📝' },
+];
 </script>
 
 <template>
   <nav class="tabs">
-    <button class="tab-btn" :class="{ active: mode === 'all' }" @click="$emit('switch', 'all')">
-      All Words
-    </button>
-    <button class="tab-btn" :class="{ active: mode === 'saved' }" @click="$emit('switch', 'saved')">
-      Saved Words (<span>{{ savedCount }}</span>)
-    </button>
-    <button class="tab-btn" :class="{ active: mode === 'add' }" @click="$emit('switch', 'add')">
-      + Add Word
-    </button>
-    <button class="tab-btn" :class="{ active: mode === 'exam' }" @click="$emit('switch', 'exam')">
-      Exam
+    <button
+      v-for="t in tabs"
+      :key="t.key"
+      class="tab-btn"
+      :class="{ active: mode === t.key }"
+      @click="$emit('switch', t.key)"
+    >
+      <span class="tab-icon" aria-hidden="true">{{ t.icon }}</span>
+      <span class="tab-label">{{ t.label }}</span>
+      <span v-if="t.key === 'saved' && savedCount > 0" class="tab-badge">{{ savedCount }}</span>
     </button>
   </nav>
 </template>

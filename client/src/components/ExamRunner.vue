@@ -3,6 +3,7 @@ import { ref, computed } from 'vue';
 
 const CORRECT_FEEDBACK_DELAY_MS = 500;
 const INCORRECT_FEEDBACK_DELAY_MS = 3000;
+const OPTION_LETTERS = ['A', 'B', 'C', 'D'];
 
 const props = defineProps({
   exam: { type: Object, required: true },
@@ -14,6 +15,7 @@ const feedback = ref(null); // answered question (with correctIndex) while showi
 const selectedOption = ref(null);
 
 const currentQuestion = computed(() => feedback.value ?? props.exam.questions[props.exam.currentIndex]);
+const progressPct = computed(() => (props.exam.currentIndex / props.exam.questions.length) * 100);
 
 function optionClass(i) {
   if (!feedback.value) return '';
@@ -57,8 +59,15 @@ async function selectOption(optionIndex) {
       <span>Exam #{{ exam.id }}</span>
     </div>
 
+    <div class="exam-progress-track">
+      <div class="exam-progress-fill" :style="{ width: `${progressPct}%` }" />
+    </div>
+
     <section class="card">
       <div class="word">{{ currentQuestion.word }}</div>
+      <div v-if="feedback" class="exam-feedback-banner" :class="feedback.correct ? 'correct' : 'incorrect'">
+        {{ feedback.correct ? '✓ Correct' : '✗ Incorrect' }}
+      </div>
     </section>
 
     <div class="exam-options">
@@ -70,7 +79,10 @@ async function selectOption(optionIndex) {
         :disabled="submitting || !!feedback"
         @click="selectOption(i)"
       >
-        {{ option }}
+        <span class="exam-option-letter">{{ OPTION_LETTERS[i] }}</span>
+        <span class="exam-option-text">{{ option }}</span>
+        <span v-if="optionClass(i) === 'correct'" class="exam-option-mark" aria-hidden="true">✓</span>
+        <span v-else-if="optionClass(i) === 'incorrect'" class="exam-option-mark" aria-hidden="true">✗</span>
       </button>
     </div>
 
