@@ -151,6 +151,43 @@ body {
   font-weight: 700;
 }
 
+.pronounce-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.pronounce-btn:hover:not(:disabled) {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.pronounce-btn:disabled {
+  cursor: default;
+}
+
+.pronounce-btn.unavailable {
+  opacity: 0.4;
+}
+
+@keyframes pronounce-spin {
+  to { transform: rotate(360deg); }
+}
+
+.pronounce-spin {
+  display: inline-block;
+  animation: pronounce-spin 0.8s linear infinite;
+}
+
 .meaning-toggle {
   padding: 8px 18px;
   border-radius: 20px;
