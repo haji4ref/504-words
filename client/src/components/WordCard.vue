@@ -1,5 +1,7 @@
 <script setup>
-defineProps({
+import { ref, watch } from 'vue';
+
+const props = defineProps({
   word: { type: Object, default: null },
   loading: { type: Boolean, required: true },
   index: { type: Number, required: true },
@@ -9,6 +11,56 @@ defineProps({
   meaningVisible: { type: Boolean, required: true },
 });
 defineEmits(['toggle-meaning', 'prev', 'next', 'toggle-save']);
+
+// null = not yet fetched, '' = no audio available, string = playable URL
+const audioUrl = ref(null);
+const audioLoading = ref(false);
+const audioCache = new Map(); // word text → URL or ''
+
+watch(
+  () => props.word?.id,
+  () => {
+    if (!props.word) { audioUrl.value = null; return; }
+    const cached = audioCache.get(props.word.word);
+    audioUrl.value = cached !== undefined ? cached : null;
+  }
+);
+
+async function playPronunciation() {
+  if (!props.word || audioLoading.value) return;
+
+  const wordText = props.word.word;
+
+  if (audioCache.has(wordText)) {
+    const url = audioCache.get(wordText);
+    if (url) new Audio(url).play().catch(() => {});
+    return;
+  }
+
+  audioLoading.value = true;
+  try {
+    const res = await fetch(
+      `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(wordText)}`
+    );
+    if (!res.ok) throw new Error('not found');
+    const data = await res.json();
+    const phonetics = data[0]?.phonetics ?? [];
+    const found = phonetics.find((p) => p.audio && p.audio.trim());
+    const url = found
+      ? found.audio.startsWith('//')
+        ? 'https:' + found.audio
+        : found.audio
+      : '';
+    audioCache.set(wordText, url);
+    audioUrl.value = url;
+    if (url) new Audio(url).play().catch(() => {});
+  } catch {
+    audioCache.set(wordText, '');
+    audioUrl.value = '';
+  } finally {
+    audioLoading.value = false;
+  }
+}
 </script>
 
 <template>
@@ -20,6 +72,18 @@ defineEmits(['toggle-meaning', 'prev', 'next', 'toggle-save']);
   <section v-if="loading || word" class="card">
     <div class="word">{{ loading ? 'Loading...' : word.word }}</div>
     <template v-if="!loading">
+      <button
+        class="pronounce-btn"
+        :class="{ unavailable: audioUrl === '' }"
+        :disabled="audioLoading || audioUrl === ''"
+        :aria-label="audioUrl === '' ? 'Pronunciation unavailable' : 'Play pronunciation'"
+        @click="playPronunciation"
+      >
+        <span :class="{ 'pronounce-spin': audioLoading }" aria-hidden="true">
+          {{ audioLoading ? '⟳' : audioUrl === '' ? '🔇' : '🔊' }}
+        </span>
+        {{ audioLoading ? 'Loading…' : audioUrl === '' ? 'No audio' : 'Pronounce' }}
+      </button>
       <button class="meaning-toggle" @click="$emit('toggle-meaning')">
         {{ meaningVisible ? 'Hide meaning' : 'Show meaning' }}
       </button>
